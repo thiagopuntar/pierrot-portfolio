@@ -1,0 +1,12 @@
+{
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    // "editor.quickSuggestions": {
+    //   "other": true,
+    //   "comments": false,
+    //   "strings": true
+    // },
+    // "emmet.triggerExpansionOnTab": true
+}
