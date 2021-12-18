@@ -1,11 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styled from 'styled-components'
-import { MdLocationOn } from "react-icons/md";
-import imgHero1 from "../public/img/img-hero-1.jpg";
-import MainHero from '../components/MainHero';
+import Head from "next/head";
+import MainHero from "../components/MainHero";
+import AboutMe from "../components/AboutMe";
+import styled from "styled-components";
 
-
+const Main = styled.main`
+  margin: 0 auto;
+  padding: 0 5%;
+`;
 
 export default function Home() {
   return (
@@ -16,10 +17,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <Main>
         <MainHero />
-
-      </main>
+        <AboutMe />
+      </Main>
     </div>
-  )
+  );
 }

@@ -3,12 +3,23 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 const theme = {
   colors: {
     primary: "#323649",
-    secondary: "#F5E129"
-  }
+    secondary: "#F5E129",
+  },
+  action: {
+    primary: "#341355",
+  },
+  typography: {
+    light: "#F3F3E6",
+    dark: "#341355",
+  },
 };
 
 const GlobalStyle = createGlobalStyle`
-  html, body {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body, * {
     font-family: "Poppins";
     background-color: #f3f3e6;
     box-sizing: border-box;
@@ -26,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
   }
 
-`
+`;
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -36,7 +47,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
