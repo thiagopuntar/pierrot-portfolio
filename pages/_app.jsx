@@ -11,6 +11,7 @@ const theme = {
   typography: {
     light: "#F3F3E6",
     dark: "#341355",
+    title: "#4B098D",
   },
 };
 

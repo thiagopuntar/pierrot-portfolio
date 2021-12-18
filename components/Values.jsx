@@ -23,7 +23,7 @@ const StyledCard = styled(Card)`
 
 const Values = () => {
   return (
-    <section>
+    <section style={{ marginBottom: "200px" }}>
       <H2>Valores e Princípios</H2>
       <CardWrapper>
         <StyledCard title="Aprendizado Contínuo">

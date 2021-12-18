@@ -3,6 +3,7 @@ import MainHero from "../components/MainHero";
 import AboutMe from "../components/AboutMe";
 import styled from "styled-components";
 import Values from "../components/Values";
+import Works from "../components/Works";
 
 const Main = styled.main`
   margin: 0 auto;
@@ -22,6 +23,7 @@ export default function Home() {
         <MainHero />
         <AboutMe />
         <Values />
+        <Works />
       </Main>
     </div>
   );
