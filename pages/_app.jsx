@@ -13,6 +13,10 @@ const theme = {
     dark: "#341355",
     title: "#4B098D",
   },
+  bg: {
+    footer: "#341355",
+    header: "#E8E0FF80",
+  },
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -25,6 +29,8 @@ const GlobalStyle = createGlobalStyle`
     background-color: #f3f3e6;
     box-sizing: border-box;
     color: #323649;
+    padding: 0;
+    margin: 0;
   }
 
   h1 {
@@ -41,6 +47,10 @@ const GlobalStyle = createGlobalStyle`
   h2 {
     color: #323649;
     font-weight: 400;  
+  }
+
+  ul {
+    list-style: none;
   }
 
 `;
