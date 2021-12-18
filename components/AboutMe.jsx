@@ -9,14 +9,20 @@ import Button from "./Button";
 const H1 = styled.h1`
   font-family: Poppins;
   font-size: 16px;
+  margin-bottom: 20px;
 `;
 
 const ContentWrapper = styled.div`
-  flex: 1;
+  width: 50%;
+
+  & > p {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
 `;
 
 const ImageStyled = styled(ImageWrapper)`
-  flex: 1;
+  width: 50%;
 `;
 
 const Wrapper = styled.div`

@@ -1,13 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 
-const getBackgroundColor = (props) =>
-  props.variant === "outlined" ? "" : props.theme.action.primary;
+const getBackgroundColor = (props) => {
+  const bgs = {
+    outlined: "",
+    primary: props.theme.action.primary,
+    secondary: props.theme.action.secondary,
+  };
 
-const getTextColor = (props) =>
-  props.variant === "outlined"
-    ? props.theme.typography.dark
-    : props.theme.typography.light;
+  return bgs[props.variant] || bgs.primary;
+};
+
+const getTextColor = (props) => {
+  const colors = {
+    outlined: props.theme.typography.dark,
+    primary: props.theme.typography.light,
+    secondary: props.theme.action.primary,
+  };
+
+  return colors[props.variant] || colors.primary;
+};
 
 const StyledButton = styled.button`
   border-radius: 15px;
@@ -16,6 +28,12 @@ const StyledButton = styled.button`
   background-color: ${getBackgroundColor};
   color: ${getTextColor};
   font-weight: 600;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(105%);
+  }
 `;
 
 const Button = ({ children, className, variant }) => {

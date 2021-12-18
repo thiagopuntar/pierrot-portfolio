@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   border-radius: 31px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
-  padding: 30px 10px 0 10px;
+  padding: 30px 10px 10px 10px;
   transition: 0.2s ease-out;
 
   &:hover {
@@ -30,6 +30,7 @@ const Title = styled.h3`
 const Paragraph = styled.p`
   background: #ffffff;
   padding: 5px;
+  font-size: 14px;
 `;
 
 const Card = ({ title, children, className }) => {

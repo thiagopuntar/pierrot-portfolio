@@ -7,11 +7,13 @@ const H2 = styled.h2`
   text-align: center;
   color: #4b098d;
   font-weight: 500;
+  margin-bottom: 60px;
 `;
 
 const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   gap: 30px;
   width: 90%;
   margin: 0 auto;

@@ -7,6 +7,7 @@ const theme = {
   },
   action: {
     primary: "#341355",
+    secondary: "#F5E129",
   },
   typography: {
     light: "#F3F3E6",

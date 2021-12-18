@@ -32,7 +32,7 @@ const Works = () => {
         Como os correntistas do Banco Neon controlam suas finanças e ao mesmo
         tempo economizam para ter uma melhor qualidade de vida.
         <ButtonWrapper>
-          <Button>Veja o estudo de caso</Button>
+          <Button variant="secondary">Veja o estudo de caso</Button>
         </ButtonWrapper>
       </WorkCard>
     </Wrapper>
