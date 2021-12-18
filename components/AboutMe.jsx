@@ -25,6 +25,7 @@ const Wrapper = styled.div`
   align-items: center;
   padding: 0 15%;
   gap: 20px;
+  margin-bottom: 200px;
 `;
 
 const ButtonWrapper = styled.div`

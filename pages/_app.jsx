@@ -37,6 +37,11 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
   }
 
+  h2 {
+    color: #323649;
+    font-weight: 400;  
+  }
+
 `;
 
 function MyApp({ Component, pageProps }) {
