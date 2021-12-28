@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import { BsMedium, BsLinkedin } from "react-icons/bs";
+import { linkedinLink, mediumLink, resume } from "../constants/links";
 
 const Wrapper = styled.footer`
   width: 100%;
@@ -62,21 +63,13 @@ const Footer = () => {
           <Name>Thiago Castro</Name>
         </li>
         <li>
-          <a
-            href="https://www.linkedin.com/in/thiagocastrocruz/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={linkedinLink} target="_blank" rel="noreferrer">
             <SocialMediaWrapper>Linkedin</SocialMediaWrapper>
             <BsLinkedin />
           </a>
         </li>
         <li>
-          <a
-            href="https://medium.com/@thiagodesignerux"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={mediumLink} target="_blank" rel="noreferrer">
             <SocialMediaWrapper>Medium</SocialMediaWrapper>
             <BsMedium />
           </a>
@@ -89,7 +82,12 @@ const Footer = () => {
         </li>
       </ProfileWrapper>
       <ButtonWrapper>
-        <Button variant="outlinedSecondary">Baixar currículo</Button>
+        <Button
+          variant="outlinedSecondary"
+          onClick={() => window.open(resume, "_blank")}
+        >
+          Baixar currículo
+        </Button>
       </ButtonWrapper>
     </Wrapper>
   );

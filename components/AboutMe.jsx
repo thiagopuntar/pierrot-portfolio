@@ -5,6 +5,7 @@ import ImageWrapper from "./ImageWrapper";
 import Image from "next/image";
 import imgHero2 from "../public/img/img-hero-2.jpg";
 import Button from "./Button";
+import { linkedinLink, resume } from "../constants/links";
 
 const H1 = styled.h1`
   font-family: Poppins;
@@ -79,8 +80,15 @@ const AboutMe = () => {
           <MdArrowRightAlt size="26px" />
         </LinkWrapper>
         <ButtonWrapper>
-          <StyledButton>Baixe o Currículo</StyledButton>
-          <StyledButton variant="outlined">Conecte-se no Linkedin</StyledButton>
+          <StyledButton onClick={() => window.open(resume, "_blank")}>
+            Baixe o Currículo
+          </StyledButton>
+          <StyledButton
+            variant="outlined"
+            onClick={() => window.open(linkedinLink, "_blank")}
+          >
+            Conecte-se no Linkedin
+          </StyledButton>
         </ButtonWrapper>
       </ContentWrapper>
     </Wrapper>

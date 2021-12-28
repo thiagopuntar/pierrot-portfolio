@@ -46,9 +46,9 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = ({ children, className, variant }) => {
+const Button = ({ children, className, variant, ...props }) => {
   return (
-    <StyledButton className={className} variant={variant}>
+    <StyledButton className={className} variant={variant} {...props}>
       {children}
     </StyledButton>
   );
