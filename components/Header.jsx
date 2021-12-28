@@ -7,13 +7,13 @@ import Image from "next/image";
 const Wrapper = styled.header`
   position: fixed;
   width: 100%;
-  background: ${(props) => props.theme.bg.header};
+  background: ${(props) => props.theme.colors.bg.header};
   display: flex;
   justify-content: space-around;
   z-index: 1;
 
   & * {
-    background: ${(props) => props.theme.bg.header};
+    background: ${(props) => props.theme.colors.bg.header};
   }
 `;
 

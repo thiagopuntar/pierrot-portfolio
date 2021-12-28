@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   border-radius: 31px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
-  padding: 30px 10px 10px 10px;
+  padding: 30px 10px 10px 20px;
   transition: 0.2s ease-out;
 
   &:hover {
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 const TopBorder = styled.div`
   border-top: 4px solid ${(props) => props.theme.colors.secondary};
   width: 30%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 `;
 
 const Title = styled.h3`
@@ -24,12 +24,11 @@ const Title = styled.h3`
   font-family: "Playfair display";
   font-weight: 400;
   font-size: 20px;
-  margin-left: 20px;
+  margin-bottom: 10px;
 `;
 
 const Paragraph = styled.p`
   background: #ffffff;
-  padding: 5px;
   font-size: 14px;
 `;
 

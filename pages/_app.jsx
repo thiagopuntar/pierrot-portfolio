@@ -2,36 +2,42 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 const theme = {
   colors: {
-    primary: "#323649",
-    secondary: "#F5E129",
-  },
-  action: {
-    primary: "#341355",
-    secondary: "#F5E129",
-  },
-  typography: {
-    light: "#F3F3E6",
-    dark: "#341355",
-    title: "#4B098D",
-  },
-  bg: {
-    footer: "#341355",
-    header: "#E8E0FF80",
+    primary: {
+      default: "#4B098D",
+      light: "#F2EFF9",
+      dark: "#341355",
+    },
+    secondary: {
+      default: "#F5E129",
+      light: "#FFDE86",
+      dark: "#FEBA02",
+    },
+    typography: {
+      default: "#5B5E6E",
+      light: "#7A7A7A",
+      dark: "#323649",
+      button: "#FBFBF7",
+    },
+    bg: {
+      body: "#f3f3e6",
+      footer: "#341355",
+      header: "#E8E0FF",
+    },
   },
 };
 
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
   }
 
   html, body, * {
     font-family: "Poppins";
     background-color: #f3f3e6;
     box-sizing: border-box;
-    color: #323649;
-    padding: 0;
-    margin: 0;
+    color: ${theme.colors.typography.dark};
   }
 
   h1 {

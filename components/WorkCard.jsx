@@ -5,10 +5,11 @@ const Wrapper = styled.div`
   position: relative;
   width: 80%;
   margin: 0 auto;
+  left: 5%;
 `;
 
 const ImageWrapper = styled.div`
-  width: 90%;
+  width: 70%;
 
   & img {
     border-radius: 16px;
@@ -18,9 +19,10 @@ const ImageWrapper = styled.div`
 const ContentWrapper = styled.div`
   position: absolute;
   top: 15%;
-  left: 70%;
+  left: 50%;
   padding: 10px 20px;
   min-width: 300px;
+  max-width: 400px;
   background: #ffffff;
   border-radius: 14px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -32,7 +34,7 @@ const ContentWrapper = styled.div`
 
 const Header = styled.h3`
   font-size: 18px;
-  color: ${(props) => props.theme.typography.title};
+  color: ${(props) => props.theme.colors.typography.dark};
   font-weight: 500;
   text-align: center;
   margin: 0;

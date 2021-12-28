@@ -12,7 +12,7 @@ const H2 = styled.h2`
 
 const CardWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 300px);
   justify-items: center;
   gap: 30px;
   width: 90%;
@@ -21,11 +21,17 @@ const CardWrapper = styled.div`
 
 const StyledCard = styled(Card)`
   max-width: 300px;
+  padding-top: 10%;
+  padding-bottom: 10%;
 `;
 
 const Values = () => {
   return (
-    <section style={{ marginBottom: "200px" }}>
+    <section
+      style={{
+        marginBottom: "200px",
+      }}
+    >
       <H2>Valores e Princípios</H2>
       <CardWrapper>
         <StyledCard title="Aprendizado Contínuo">

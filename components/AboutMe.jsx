@@ -48,7 +48,7 @@ const StyledButton = styled(Button)`
 `;
 
 const Span = styled.span`
-  color: ${(props) => props.theme.action.primary};
+  color: ${(props) => props.theme.colors.primary.default};
   font-weight: 600;
 `;
 
