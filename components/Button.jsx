@@ -4,9 +4,7 @@ import styled from "styled-components";
 const getBackgroundColor = (props) => {
   const bgs = {
     outlined: "inherit",
-    primary: props.theme.colors.primary.default,
-    secondary: props.theme.colors.secondary.default,
-    outlinedSecondary: props.theme.colors.primary.default,
+    primary: props.theme.colors.primary.zero1,
   };
 
   return bgs[props.variant] || bgs.primary;
@@ -14,27 +12,28 @@ const getBackgroundColor = (props) => {
 
 const getTextColor = (props) => {
   const colors = {
-    outlined: props.theme.colors.typography.dark,
-    primary: props.theme.colors.typography.button,
-    secondary: props.theme.colors.typography.dark,
-    outlinedSecondary: props.theme.colors.typography.button,
+    primary: props.theme.colors.secondary.zero1,
+    outlined: props.theme.colors.primary.zero4,
   };
 
   return colors[props.variant] || colors.primary;
 };
 
-const getBorderColor = (props) => {
+const getBorder = (props) => {
   const colors = {
-    outlinedSecondary: props.theme.colors.secondary.default,
+    outlined: props.theme.colors.primary.zero4,
   };
 
-  return colors[props.variant] || props.theme.colors.primary.default;
+  const color = colors[props.variant];
+  if (!color) return 0;
+
+  return `2px solid ${color}`;
 };
 
 const StyledButton = styled.button`
-  border-radius: 15px;
-  padding: 5px 30px;
-  border: 1px solid ${getBorderColor};
+  border-radius: 20px;
+  padding: 8px 0px;
+  border: ${getBorder};
   background-color: ${getBackgroundColor};
   color: ${getTextColor};
   font-weight: 600;
