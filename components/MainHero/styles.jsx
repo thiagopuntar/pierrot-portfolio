@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import ImageWrapper from "../ImageWrapper";
 
 export const Location = styled.div`
   margin: 16px 0;
@@ -14,10 +13,6 @@ export const Location = styled.div`
 
 export const ContentWrapper = styled.div`
   margin-bottom: 24px;
-`;
-
-export const ImageStyled = styled(ImageWrapper)`
-  /* flex: 2; */
 `;
 
 export const H1 = styled.h1`

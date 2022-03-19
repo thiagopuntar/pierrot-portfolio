@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "next/image";
+import ResponsiveImage from "../ResponsiveImage";
 import { MdLocationOn } from "react-icons/md";
 import imgHero1 from "../../public/img/img-hero-1.jpg";
-import { Location, ContentWrapper, ImageStyled, H1 } from "./styles";
+import { Location, ContentWrapper, H1 } from "./styles";
 
 const MainHero = () => (
   <>
@@ -21,9 +21,7 @@ const MainHero = () => (
         aprender e curtir minha família.
       </h2>
     </ContentWrapper>
-    <ImageStyled>
-      <Image src={imgHero1} alt="Thiago Castro" />
-    </ImageStyled>
+    <ResponsiveImage src={imgHero1} alt="Thiago Castro" />
   </>
 );
 
