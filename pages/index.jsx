@@ -8,8 +8,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const Main = styled.main`
-  margin: 0 auto;
-  padding: 0 5%;
+  margin: 0 24px;
 `;
 
 export default function Home() {
@@ -20,14 +19,14 @@ export default function Home() {
         <meta name="description" content="Thiago Castro" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      {/* <Header /> */}
       <Main>
         <MainHero />
-        <AboutMe />
+        {/* <AboutMe />
         <Values />
-        <Works />
+        <Works /> */}
       </Main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

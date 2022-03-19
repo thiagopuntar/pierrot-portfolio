@@ -8,9 +8,11 @@ const theme = {
       dark: "#341355",
     },
     secondary: {
-      default: "#F5E129",
-      light: "#FFDE86",
-      dark: "#FEBA02",
+      zero1: "#F5E129",
+      zero2: "#FFF8B2",
+      zero3: "#FFF48C",
+      zero4: "#FEBA02",
+      zero5: "#E5BA45",
     },
     typography: {
       default: "#5B5E6E",
@@ -43,12 +45,13 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     font-family: "Playfair Display", Sans-Serif;
     color: #323649;
-    font-size: 2.5rem;
+    font-size: 32px;
   }
 
   h2 {
     color: #5B5E6E;
     font-weight: 300;
+    font-size: 14px;
   }
 
   h2 {
