@@ -3,9 +3,11 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 const theme = {
   colors: {
     primary: {
-      default: "#4B098D",
-      light: "#F2EFF9",
-      dark: "#341355",
+      zero1: "#4B098D",
+      zero2: "#ECD9FF",
+      zero3: "#CC99FF",
+      zero4: "#532680",
+      zero5: "#341355",
     },
     secondary: {
       zero1: "#F5E129",
@@ -37,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
 
   html, body, * {
     font-family: "Poppins";
-    background-color: #f3f3e6;
+    background-color: #FBFBF7;
     box-sizing: border-box;
     color: ${theme.colors.typography.dark};
   }
