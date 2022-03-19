@@ -1,42 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import styled from "styled-components";
 import { MdLocationOn } from "react-icons/md";
-import imgHero1 from "../public/img/img-hero-1.jpg";
-import ImageWrapper from "./ImageWrapper";
-
-const Location = styled.div`
-  margin: 16px 0;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-
-  span {
-    font-size: 10px;
-  }
-`;
-
-const ContentWrapper = styled.div`
-  margin-bottom: 24px;
-`;
-
-const ImageStyled = styled(ImageWrapper)`
-  /* flex: 2; */
-`;
-
-const H1 = styled.h1`
-  margin-bottom: 16px;
-
-  & * {
-    font-family: "Playfair Display";
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  strong {
-    color: ${(props) => props.theme.colors.secondary.zero4};
-  }
-`;
+import imgHero1 from "../../public/img/img-hero-1.jpg";
+import { Location, ContentWrapper, ImageStyled, H1 } from "./styles";
 
 const MainHero = () => (
   <>
