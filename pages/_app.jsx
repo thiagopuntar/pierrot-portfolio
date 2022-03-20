@@ -16,11 +16,17 @@ const theme = {
       zero4: "#FEBA02",
       zero5: "#E5BA45",
     },
-    typography: {
-      default: "#5B5E6E",
-      light: "#7A7A7A",
-      dark: "#323649",
-      button: "#FBFBF7",
+    bg: {
+      white: "#FBFBF7",
+      white2: "#F3F3E6",
+    },
+    white: {
+      zero1: "#EDF1F6",
+      zero2: "#EFEFFF",
+    },
+    black: {
+      zero1: "#323649",
+      zero2: "#211D28",
     },
     bg: {
       body: "#f3f3e6",
@@ -39,26 +45,19 @@ const GlobalStyle = createGlobalStyle`
 
   html, body, * {
     font-family: "Poppins";
-    background-color: #FBFBF7;
+    background-color: ${(props) => props.theme.colors.bg.white};
     box-sizing: border-box;
-    color: ${theme.colors.typography.dark};
+    color: ${theme.colors.black.zero1};
   }
 
   h1 {
     font-family: "Playfair Display", Sans-Serif;
-    color: #323649;
     font-size: 32px;
   }
 
   h2 {
-    color: #5B5E6E;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
-  }
-
-  h2 {
-    color: #323649;
-    font-weight: 400;  
   }
 
   ul {
@@ -70,8 +69,8 @@ const GlobalStyle = createGlobalStyle`
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <GlobalStyle />
       <ThemeProvider theme={theme}>
+        <GlobalStyle />
         <Component {...pageProps} />
       </ThemeProvider>
     </>
