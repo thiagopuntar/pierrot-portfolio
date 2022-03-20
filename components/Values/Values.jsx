@@ -30,11 +30,7 @@ const Values = () => {
   ];
 
   return (
-    <section
-      style={{
-        marginBottom: "200px",
-      }}
-    >
+    <section>
       <H2>Valores e Princípios</H2>
       <CardWrapper>
         {data.map(({ title, body }) => (
