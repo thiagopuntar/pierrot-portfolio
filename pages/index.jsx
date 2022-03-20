@@ -22,9 +22,9 @@ export default function Home() {
       {/* <Header /> */}
       <Main>
         <MainHero />
-        {/* <AboutMe />
-        <Values />
-        <Works /> */}
+        <AboutMe />
+        {/* <Values /> */}
+        {/* <Works /> */}
       </Main>
       {/* <Footer /> */}
     </div>

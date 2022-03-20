@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 import Button from "../Button";
 
 export const H1 = styled.h1`
@@ -17,7 +18,7 @@ export const ContentWrapper = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  margin-top: 40px;
+  margin: 40px 0 80px;
 `;
 
 export const ButtonWrapper = styled.div`

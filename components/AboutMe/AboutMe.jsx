@@ -3,6 +3,7 @@ import { MdArrowRightAlt } from "react-icons/md";
 import imgHero2 from "../../public/img/img-hero-2.jpg";
 import { linkedinLink, resume } from "../../constants/links";
 import ResponsiveImage from "../ResponsiveImage";
+import Link from "next/link";
 import {
   H1,
   ContentWrapper,
@@ -28,10 +29,12 @@ const AboutMe = () => {
           Tecnologia e inovação sempre foi uma paixão minha, adoro artes e criar
           desenhos e imagens. Descobrir no UX uma nova paixão.
         </p>
-        <LinkWrapper>
-          <Span>Saiba mais sobre mim</Span>
-          <MdArrowRightAlt size={20} />
-        </LinkWrapper>
+        <Link href="/about">
+          <LinkWrapper>
+            <Span>Saiba mais sobre mim</Span>
+            <MdArrowRightAlt size={20} />
+          </LinkWrapper>
+        </Link>
         <ButtonWrapper>
           <StyledButton onClick={() => window.open(resume, "_blank")}>
             Baixe o meu currículo
