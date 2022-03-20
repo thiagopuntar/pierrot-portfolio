@@ -8,6 +8,7 @@ const theme = {
       zero3: "#CC99FF",
       zero4: "#532680",
       zero5: "#341355",
+      border: "rgba(53, 26, 80, 0.3)",
     },
     secondary: {
       zero1: "#F5E129",
