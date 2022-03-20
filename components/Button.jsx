@@ -5,6 +5,7 @@ const getBackgroundColor = (props) => {
   const bgs = {
     outlined: "inherit",
     primary: props.theme.colors.primary.zero1,
+    secondary: props.theme.colors.secondary.zero1,
   };
 
   return bgs[props.variant] || bgs.primary;
@@ -14,6 +15,7 @@ const getTextColor = (props) => {
   const colors = {
     primary: props.theme.colors.secondary.zero1,
     outlined: props.theme.colors.primary.zero4,
+    secondary: props.theme.colors.primary.zero1,
   };
 
   return colors[props.variant] || colors.primary;
@@ -39,6 +41,7 @@ const StyledButton = styled.button`
   font-weight: 600;
   transition: 0.2s ease-out;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   &:hover {
     transform: scale(105%);
