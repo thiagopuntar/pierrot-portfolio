@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledImage = styled(Image)`
-  border-radius: 20px;
+  border-radius: 24px;
 `;
 
 const ResponsiveImage = ({ className, src, alt }) => {
