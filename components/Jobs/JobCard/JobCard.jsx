@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import Button from "../../Button";
 import {
   ContentWrapper,
   Header,
@@ -6,6 +8,7 @@ import {
   Text,
   Title,
   Wrapper,
+  StyledButton,
 } from "./styles";
 
 const JobCard = ({
@@ -13,6 +16,7 @@ const JobCard = ({
   imageAlt,
   header,
   title,
+  href,
   children,
   className,
 }) => {
@@ -25,6 +29,11 @@ const JobCard = ({
         <Header>{header}</Header>
         <Title>{title}</Title>
         <Text>{children}</Text>
+        <Link href={href}>
+          <a variant="secondary">
+            <StyledButton variant="secondary">Veja o Trabalho</StyledButton>
+          </a>
+        </Link>
       </ContentWrapper>
     </Wrapper>
   );

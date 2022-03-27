@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import ResponsiveImage from "../../ResponsiveImage";
+import Button from "../../Button";
 
 export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: -83px;
 `;
 
 export const ImageWrapper = styled(ResponsiveImage)`
@@ -17,6 +16,8 @@ export const ContentWrapper = styled.div`
   border-radius: 24px;
   padding-top: 16px;
   max-width: 288px;
+  text-align: center;
+  margin: 0 auto;
   position: relative;
   top: -115px;
 `;
@@ -41,4 +42,9 @@ export const Title = styled.h4`
 export const Text = styled.div`
   text-align: center;
   margin: 16px 16px 0 16px;
+`;
+
+export const StyledButton = styled(Button)`
+  margin: 40px 0 16px;
+  padding: 12px;
 `;

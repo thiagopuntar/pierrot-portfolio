@@ -1,9 +1,8 @@
 import React from "react";
 import JobCard from "./JobCard";
 import job2 from "../../public/img/job-2.jpg";
-import Button from "../Button";
-import { ButtonWrapper, H2, StyledButton, Wrapper } from "./styles";
-import ResponsiveImage from "../ResponsiveImage";
+import job3 from "../../public/img/job-3.png";
+import { H2, Wrapper } from "./styles";
 
 const Jobs = () => {
   return (
@@ -14,10 +13,21 @@ const Jobs = () => {
         imageAlt="Portifólio"
         header="Criação do Portifólio"
         title="Portifólio"
+        href="/jobs/portifolio"
       >
         Como foi pensado e estruturado o desenvolvimento desse portifólio.
         Utilizando ferramentas e técnicas de UX.
-        <StyledButton variant="secondary">Veja o Trabalho</StyledButton>
+      </JobCard>
+
+      <JobCard
+        imageSrc={job3}
+        imageAlt="Portifólio"
+        header="Aplicativo de NFT"
+        title="Cyber Crypto"
+        href="/jobs/cyberCrypto"
+      >
+        Desenvolvimento de design para um aplicativo de NFT, com elementos de
+        carteira e compra de NFT
       </JobCard>
     </Wrapper>
   );
