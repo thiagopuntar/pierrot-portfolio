@@ -25,6 +25,6 @@ export const H1 = styled.h1`
   }
 
   strong {
-    color: ${(props) => props.theme.colors.secondary.zero4};
+    color: ${(props) => props.theme.colors.secondary.z4};
   }
 `;

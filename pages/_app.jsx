@@ -3,31 +3,31 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 const theme = {
   colors: {
     primary: {
-      zero1: "#4B098D",
-      zero2: "#ECD9FF",
-      zero3: "#CC99FF",
-      zero4: "#532680",
-      zero5: "#341355",
+      z1: "#4B098D",
+      z2: "#ECD9FF",
+      z3: "#CC99FF",
+      z4: "#532680",
+      z5: "#341355",
       border: "rgba(53, 26, 80, 0.3)",
     },
     secondary: {
-      zero1: "#F5E129",
-      zero2: "#FFF8B2",
-      zero3: "#FFF48C",
-      zero4: "#FEBA02",
-      zero5: "#E5BA45",
+      z1: "#F5E129",
+      z2: "#FFF8B2",
+      z3: "#FFF48C",
+      z4: "#FEBA02",
+      z5: "#E5BA45",
     },
     bg: {
       white: "#FBFBF7",
       white2: "#F3F3E6",
     },
     white: {
-      zero1: "#EDF1F6",
-      zero2: "#EFEFFF",
+      z1: "#EDF1F6",
+      z2: "#EFEFFF",
     },
     black: {
-      zero1: "#323649",
-      zero2: "#211D28",
+      z1: "#323649",
+      z2: "#211D28",
     },
     bg: {
       body: "#f3f3e6",
@@ -48,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Poppins";
     background-color: ${(props) => props.theme.colors.bg.white};
     box-sizing: border-box;
-    color: ${theme.colors.black.zero1};
+    color: ${theme.colors.black.z1};
   }
 
   h1 {

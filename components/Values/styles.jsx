@@ -6,7 +6,7 @@ export const H2 = styled.h2`
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  color: ${(props) => props.theme.colors.primary.zero1};
+  color: ${(props) => props.theme.colors.primary.z1};
   margin-bottom: 32px;
 `;
 

@@ -4,8 +4,8 @@ import styled from "styled-components";
 const getBackgroundColor = (props) => {
   const bgs = {
     outlined: "inherit",
-    primary: props.theme.colors.primary.zero1,
-    secondary: props.theme.colors.secondary.zero1,
+    primary: props.theme.colors.primary.z1,
+    secondary: props.theme.colors.secondary.z1,
   };
 
   return bgs[props.variant] || bgs.primary;
@@ -13,9 +13,9 @@ const getBackgroundColor = (props) => {
 
 const getTextColor = (props) => {
   const colors = {
-    primary: props.theme.colors.secondary.zero1,
-    outlined: props.theme.colors.primary.zero4,
-    secondary: props.theme.colors.primary.zero1,
+    primary: props.theme.colors.secondary.z1,
+    outlined: props.theme.colors.primary.z4,
+    secondary: props.theme.colors.primary.z1,
   };
 
   return colors[props.variant] || colors.primary;
@@ -23,7 +23,7 @@ const getTextColor = (props) => {
 
 const getBorder = (props) => {
   const colors = {
-    outlined: props.theme.colors.primary.zero4,
+    outlined: props.theme.colors.primary.z4,
   };
 
   const color = colors[props.variant];

@@ -9,7 +9,7 @@ export const H2 = styled.h2`
   font-size: 24px;
   text-transform: uppercase;
   text-align: center;
-  color: ${(props) => props.theme.colors.primary.zero1};
+  color: ${(props) => props.theme.colors.primary.z1};
   font-weight: bold;
   margin-bottom: 32px;
 `;

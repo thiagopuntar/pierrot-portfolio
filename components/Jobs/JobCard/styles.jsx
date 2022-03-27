@@ -12,7 +12,7 @@ export const ImageWrapper = styled(ResponsiveImage)`
 `;
 
 export const ContentWrapper = styled.div`
-  background-color: ${(props) => props.theme.colors.white.zero2};
+  background-color: ${(props) => props.theme.colors.white.z2};
   border-radius: 24px;
   padding-top: 16px;
   max-width: 288px;
@@ -24,14 +24,14 @@ export const ContentWrapper = styled.div`
 
 export const Header = styled.h3`
   font-size: 18px;
-  color: ${(props) => props.theme.colors.primary.zero1};
+  color: ${(props) => props.theme.colors.primary.z1};
   font-weight: bold;
   text-align: center;
   margin-bottom: 16px;
 `;
 
 export const Title = styled.h4`
-  color: ${(props) => props.theme.colors.black.zero1};
+  color: ${(props) => props.theme.colors.black.z1};
   font-size: 24px;
   font-family: "Playfair Display";
   font-weight: normal;

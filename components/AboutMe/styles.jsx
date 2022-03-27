@@ -43,6 +43,6 @@ export const LinkWrapper = styled.a`
   align-items: center;
   gap: 10px;
   & * {
-    color: ${(props) => props.theme.colors.primary.zero1};
+    color: ${(props) => props.theme.colors.primary.z1};
   }
 `;
