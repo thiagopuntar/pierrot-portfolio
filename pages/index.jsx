@@ -26,7 +26,7 @@ export default function Home() {
         <Values />
         <Jobs />
       </Main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

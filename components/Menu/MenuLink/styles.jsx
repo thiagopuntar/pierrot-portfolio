@@ -1,12 +1,8 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
-import React from "react";
 import styled from "styled-components";
 
-const StyledA = styled.a`
+export const StyledA = styled.a`
   text-decoration: none;
-  font-size: 14px;
-  text-transform: uppercase;
+  font-size: 0.875rem;
   position: relative;
 
   &::after {
@@ -40,15 +36,3 @@ const StyledA = styled.a`
     font-weight: 700;
   `}
 `;
-
-const MenuLink = ({ className, href, name }) => {
-  const router = useRouter();
-  const isActive = router.asPath === href;
-  return (
-    <Link href={href} className={className} passHref>
-      <StyledA isActive={isActive}>{name}</StyledA>
-    </Link>
-  );
-};
-
-export default MenuLink;

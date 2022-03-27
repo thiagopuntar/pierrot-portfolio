@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import Button from "../Button";
+import Menu from "../Menu";
 
 export const Wrapper = styled.footer`
-  width: 100%;
   padding: 1.5rem;
   background: ${(props) => props.theme.colors.primary.z5};
   margin-top: 7.5rem;
@@ -10,36 +10,21 @@ export const Wrapper = styled.footer`
 
   & * {
     color: ${(props) => props.theme.colors.secondary.z1};
+    background: ${(props) => props.theme.colors.primary.z5};
   }
-
-  /* & * {
-    background: ${(props) => props.theme.colors.bg.footer};
-  }
-
-  & li {
-    color: ${(props) => props.theme.colors.typography.button};
-    margin: 10px 0;
-
-    span {
-      color: ${(props) => props.theme.colors.typography.button};
-    }
-
-    a * {
-      color: ${(props) => props.theme.colors.typography.button};
-      margin-right: 10px;
-    }
-
-    a {
-      text-decoration: none;
-    }
-  } */
 `;
 
 export const Title = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+`;
+
+export const Name = styled.h2`
+  color: ${(props) => props.theme.colors.secondary.dark};
+  font-size: 1.25rem;
+  font-family: "Playfair Display";
 `;
 
 export const StyledButton = styled(Button)`
@@ -48,22 +33,33 @@ export const StyledButton = styled(Button)`
   padding-inline: 0.75rem;
 `;
 
-export const ProfileWrapper = styled.ul``;
+export const ProfileWrapper = styled.ul`
+  display: flex;
+  justify-content: space-between;
 
-export const ButtonWrapper = styled.div``;
-
-export const Name = styled.h2`
-  color: ${(props) => props.theme.colors.secondary.dark};
-  font-size: 1.25rem;
-  font-family: "Playfair Display";
-`;
-
-export const EmailWrapper = styled.span`
-  font-style: italic;
-`;
-
-export const SocialMediaWrapper = styled.span`
-  &:hover {
-    font-weight: bold;
+  & * {
+    color: ${(props) => props.theme.colors.white.z2};
   }
+`;
+
+export const SocialWrapper = styled.div`
+  font-size: 0.875rem;
+  line-height: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`;
+
+export const StyledMenu = styled(Menu)`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`;
+
+export const SocialAnchor = styled.a`
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
 `;

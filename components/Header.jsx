@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import logo from "../public/img/Logo.png";
 import Image from "next/image";
-import MenuLink from "./MenuLink";
 
 const Wrapper = styled.header`
   position: fixed;
@@ -38,12 +37,6 @@ const Header = () => {
       <IconWrapper>
         <Image src={logo} alt="Logo" />
       </IconWrapper>
-      <MenuWrapper>
-        <MenuLink name="Home" href="/" />
-        <MenuLink name="Trabalhos" href="/works" />
-        <MenuLink name="Sobre Mim" href="/about" />
-        <MenuLink name="Contato" href="/contact" />
-      </MenuWrapper>
     </Wrapper>
   );
 };
