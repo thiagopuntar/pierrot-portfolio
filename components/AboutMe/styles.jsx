@@ -3,8 +3,8 @@ import Button from "../Button";
 
 export const H1 = styled.h1`
   font-family: Poppins;
-  font-size: 18px;
-  margin-bottom: 16px;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
 `;
 
 export const ContentWrapper = styled.div`
