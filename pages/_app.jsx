@@ -29,11 +29,6 @@ const theme = {
       z1: "#323649",
       z2: "#211D28",
     },
-    bg: {
-      body: "#f3f3e6",
-      footer: "#341355",
-      header: "#E8E0FF",
-    },
   },
 };
 
