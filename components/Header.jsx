@@ -18,12 +18,6 @@ const Wrapper = styled.header`
   }
 `;
 
-const MenuWrapper = styled.ul`
-  display: flex;
-  gap: 15px;
-  align-items: center;
-`;
-
 const IconWrapper = styled.div`
   height: 50px;
   & img {
