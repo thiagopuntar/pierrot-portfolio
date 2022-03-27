@@ -1,20 +1,20 @@
 import styled from "styled-components";
-import Button from "../Button";
 
 export const Wrapper = styled.section`
-  margin-top: 80px;
+  margin-top: 5rem;
 `;
 
 export const H2 = styled.h2`
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
   color: ${(props) => props.theme.colors.primary.z1};
   font-weight: bold;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 `;
 
-export const StyledButton = styled(Button)`
-  margin: 16px 0 16px;
-  padding: 12px;
+export const JobsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;

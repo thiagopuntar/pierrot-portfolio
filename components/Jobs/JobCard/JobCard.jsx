@@ -21,9 +21,7 @@ const JobCard = ({
 }) => {
   return (
     <Wrapper className={className}>
-      <div>
-        <ImageWrapper src={imageSrc} alt={imageAlt} />
-      </div>
+      <ImageWrapper src={imageSrc} alt={imageAlt} />
       <ContentWrapper>
         <Header>{header}</Header>
         <Title>{title}</Title>

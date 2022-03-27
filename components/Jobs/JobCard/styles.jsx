@@ -3,48 +3,51 @@ import ResponsiveImage from "../../ResponsiveImage";
 import Button from "../../Button";
 
 export const Wrapper = styled.div`
-  margin-bottom: -83px;
+  margin-bottom: -5rem;
 `;
 
 export const ImageWrapper = styled(ResponsiveImage)`
   border: 1px solid ${(props) => props.theme.colors.primary.border} !important;
-  border-radius: 24px;
+  border-radius: 1.5rem;
 `;
 
 export const ContentWrapper = styled.div`
   background-color: ${(props) => props.theme.colors.white.z2};
-  border-radius: 24px;
-  padding-top: 16px;
+  border-radius: 1.5rem;
+  padding-top: 1rem;
   max-width: 288px;
   text-align: center;
   margin: 0 auto;
   position: relative;
-  top: -115px;
+  top: -7rem;
 `;
 
 export const Header = styled.h3`
-  font-size: 18px;
+  background-color: inherit;
+  font-size: 1.125rem;
   color: ${(props) => props.theme.colors.primary.z1};
   font-weight: bold;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 `;
 
 export const Title = styled.h4`
+  background-color: inherit;
   color: ${(props) => props.theme.colors.black.z1};
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Playfair Display";
   font-weight: normal;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 `;
 
 export const Text = styled.div`
+  background-color: inherit;
   text-align: center;
-  margin: 16px 16px 0 16px;
+  margin: 1rem 1rem 0 1rem;
 `;
 
 export const StyledButton = styled(Button)`
-  margin: 40px 0 16px;
-  padding: 12px;
+  margin: 2.5rem 0 1rem;
+  padding: 0.75rem;
 `;
