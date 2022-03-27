@@ -4,17 +4,7 @@ export const StyledA = styled.a`
   text-decoration: none;
   font-size: 0.875rem;
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 15%;
-    bottom: -3px;
-    background-color: ${(props) =>
-      props.isActive && props.theme.colors.secondary.dark};
-    height: 3px;
-    width: 70%;
-  }
+  display: inline;
 
   &:hover {
     transform: scale(105%);
@@ -23,12 +13,19 @@ export const StyledA = styled.a`
   &:hover::after {
     content: "";
     position: absolute;
-    left: 15%;
-    bottom: -3px;
-    background-color: ${(props) => props.theme.colors.secondary.dark};
-    height: 3px;
-    width: 70%;
+    left: 0;
+    bottom: 0.12rem;
+    background-color: ${(props) =>
+      props.isActive && props.theme.colors.secondary.z1};
+    height: 0.1rem;
+    width: 100%;
+    z-index: 10;
   }
+`;
+
+export const Span = styled.span`
+  border-bottom: ${(props) =>
+    props.isActive && `3px solid ${props.theme.colors.secondary.z1}`};
 
   ${(props) =>
     props.isActive &&

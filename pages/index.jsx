@@ -4,7 +4,7 @@ import AboutMe from "../components/AboutMe";
 import styled from "styled-components";
 import Jobs from "../components/Jobs";
 import Footer from "../components/Footer";
-// import Header from "../components/Header";
+import Header from "../components/Header";
 import Values from "../components/Values";
 
 const Main = styled.main`
@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="description" content="Thiago Castro" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Header /> */}
+      <Header />
       <Main>
         <MainHero />
         <AboutMe />
