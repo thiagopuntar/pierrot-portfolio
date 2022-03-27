@@ -8,12 +8,12 @@ export const Wrapper = styled.div`
 
 export const ImageWrapper = styled(ResponsiveImage)`
   border: 1px solid ${(props) => props.theme.colors.primary.border} !important;
-  border-radius: 1.5rem;
+  border-radius: 24px;
 `;
 
 export const ContentWrapper = styled.div`
   background-color: ${(props) => props.theme.colors.white.z2};
-  border-radius: 1.5rem;
+  border-radius: 24px;
   padding-top: 1rem;
   max-width: 288px;
   text-align: center;

@@ -33,7 +33,7 @@ const getBorder = (props) => {
 };
 
 const StyledButton = styled.button`
-  border-radius: 1.5rem;
+  border-radius: 24px;
   padding: 0.5rem 0;
   border: ${getBorder};
   background-color: ${getBackgroundColor};
