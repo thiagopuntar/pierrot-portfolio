@@ -19,6 +19,17 @@ export const LogoWrapper = styled(ResponsiveImage)`
 
 export const HamburguerButton = styled(FcMenu)`
   cursor: pointer;
+  z-index: 3;
+  animation: fade-in 0.3s ease-in;
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 export const StyledMenu = styled(Menu)`
@@ -27,15 +38,25 @@ export const StyledMenu = styled(Menu)`
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.6rem;
   position: absolute;
   right: 1.5rem;
   top: 1.5rem;
   z-index: 2;
+  animation: fade-in 0.3s ease-in;
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   & * {
     background-color: inherit;
-    font-size: 0.625rem;
+    font-size: 0.8rem;
     line-height: 1rem;
   }
 `;

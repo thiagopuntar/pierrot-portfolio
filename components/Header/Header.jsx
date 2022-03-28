@@ -10,7 +10,7 @@ import {
 } from "./styles.jsx";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <Wrapper>
