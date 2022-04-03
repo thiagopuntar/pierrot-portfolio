@@ -6,7 +6,15 @@ const StyledImage = styled(Image)`
   border-radius: 24px;
 `;
 
-const ResponsiveImage = ({ className, src, alt, height, width }) => {
+const ResponsiveImage = ({
+  className,
+  src,
+  alt,
+  height,
+  width,
+  layout,
+  objectFit,
+}) => {
   return (
     <StyledImage
       className={className}
@@ -14,6 +22,8 @@ const ResponsiveImage = ({ className, src, alt, height, width }) => {
       alt={alt}
       height={height}
       width={width}
+      layout={layout}
+      objectFit={objectFit}
     />
   );
 };

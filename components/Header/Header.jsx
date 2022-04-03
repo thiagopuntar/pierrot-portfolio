@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../public/img/Logo.png";
 import {
-  LogoWrapper,
+  StyledLogo,
   NavBar,
   Wrapper,
   HamburguerButton,
@@ -9,6 +9,7 @@ import {
   MenuFrame,
   StyledMdMenu,
   ShadowBlur,
+  LogoWrapper,
 } from "./styles.jsx";
 
 const Header = () => {
@@ -17,7 +18,9 @@ const Header = () => {
   return (
     <Wrapper>
       <NavBar>
-        <LogoWrapper src={logo} alt="Logo" />
+        <LogoWrapper>
+          <StyledLogo src={logo} alt="Logo" layout="fill" objectFit="cover" />
+        </LogoWrapper>
         {isOpen ? (
           <StyledMenu />
         ) : (

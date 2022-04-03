@@ -20,8 +20,19 @@ export const NavBar = styled.nav`
   align-items: center;
 `;
 
-export const LogoWrapper = styled(ResponsiveImage)`
+export const StyledLogo = styled(ResponsiveImage)`
   border-radius: 8px;
+`;
+
+export const LogoWrapper = styled.div`
+  position: relative;
+  width: 32px;
+  height: 32px;
+
+  ${breakAt("md")} {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 export const HamburguerButton = styled(FcMenu)`
