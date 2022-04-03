@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakAt } from "../../../constants/breakpoints";
 
 export const Wrapper = styled.div`
   border-radius: 24px;
@@ -7,6 +8,10 @@ export const Wrapper = styled.div`
   padding: 8px 8px 0 8px;
   transition: 0.2s ease-out;
   min-height: 224px;
+
+  ${breakAt("md")} {
+    padding-top: 26px;
+  }
 `;
 
 export const TopBorder = styled.div`
@@ -14,6 +19,10 @@ export const TopBorder = styled.div`
   width: 33%;
   margin-bottom: 24px;
   margin-left: 5px;
+
+  ${breakAt("md")} {
+    display: none;
+  }
 `;
 
 export const Title = styled.h3`
