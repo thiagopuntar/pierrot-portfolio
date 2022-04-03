@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakAt } from "../../constants/breakpoints";
 import Button from "../Button";
 
 export const H1 = styled.h1`
@@ -7,39 +8,55 @@ export const H1 = styled.h1`
   margin-bottom: 1rem;
 `;
 
-export const ContentWrapper = styled.div`
-  margin-top: 24px;
+export const Wrapper = styled.div`
+  margin: 2.5rem 0 5rem;
 
-  & > p {
-    font-size: 14px;
+  ${breakAt("md")} {
+    display: flex;
+    align-items: flex-start;
+    gap: 5%;
   }
 `;
 
-export const Wrapper = styled.div`
-  margin: 40px 0 80px;
+export const ImageWrapper = styled.div`
+  ${breakAt("md")} {
+    width: 70%;
+  }
+`;
+
+export const ContentWrapper = styled.div`
+  margin-top: 1.5rem;
+
+  & > p {
+    font-size: 0.875rem;
+  }
+
+  ${breakAt("md")} {
+    margin-top: 0;
+  }
 `;
 
 export const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 16px;
-  margin-top: 20px;
+  gap: 1rem;
+  margin-top: 1.25rem;
 `;
 
 export const StyledButton = styled(Button)`
-  width: 192px;
+  width: 14rem;
 `;
 
 export const Span = styled.span`
-  font-size: 14px;
+  font-size: 0.875rem;
 `;
 
 export const LinkWrapper = styled.a`
-  margin-top: 16px;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
   & * {
     color: ${(props) => props.theme.colors.primary.z1};
   }

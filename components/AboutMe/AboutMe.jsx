@@ -12,12 +12,19 @@ import {
   StyledButton,
   Span,
   LinkWrapper,
+  ImageWrapper,
 } from "./styles";
 
 const AboutMe = () => {
   return (
     <Wrapper>
-      <ResponsiveImage src={imgHero2} alt="Thiago Castro" />
+      <ImageWrapper>
+        <ResponsiveImage
+          src={imgHero2}
+          alt="Thiago Castro"
+          layout="responsive"
+        />
+      </ImageWrapper>
       <ContentWrapper>
         <H1>Um pouco sobre mim</H1>
         <p>

@@ -40,6 +40,8 @@ export const H1 = styled.h1`
 `;
 
 export const ImageWrapper = styled.div`
-  display: block;
-  width: 60%;
+  ${breakAt("md")} {
+    display: block;
+    width: 60%;
+  }
 `;
