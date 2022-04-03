@@ -2,10 +2,10 @@ import React from "react";
 import ResponsiveImage from "../ResponsiveImage";
 import { MdLocationOn } from "react-icons/md";
 import imgHero1 from "../../public/img/img-hero-1.jpg";
-import { Location, ContentWrapper, H1 } from "./styles";
+import { Location, ContentWrapper, H1, Wrapper, ImageWrapper } from "./styles";
 
 const MainHero = () => (
-  <>
+  <Wrapper>
     <ContentWrapper>
       <Location>
         <MdLocationOn size={10} />
@@ -21,8 +21,10 @@ const MainHero = () => (
         aprender e curtir minha família.
       </h2>
     </ContentWrapper>
-    <ResponsiveImage src={imgHero1} alt="Thiago Castro" />
-  </>
+    <ImageWrapper>
+      <ResponsiveImage src={imgHero1} alt="Thiago Castro" layout="responsive" />
+    </ImageWrapper>
+  </Wrapper>
 );
 
 export default MainHero;

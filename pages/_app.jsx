@@ -1,4 +1,5 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { breakAt } from "../constants/breakpoints";
 
 const theme = {
   colors: {
@@ -44,16 +45,28 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.colors.bg.white};
     box-sizing: border-box;
     color: ${theme.colors.black.z1};
+
+    ${breakAt("md")} {
+      font-size: 18px;
+    }
+
+    ${breakAt("lg")} {
+      font-size: 22px;
+    }
+
+    ${breakAt("xl")} {
+      font-size: 24px;
+    }
   }
 
   h1 {
     font-family: "Playfair Display", Sans-Serif;
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   h2 {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   ul {
