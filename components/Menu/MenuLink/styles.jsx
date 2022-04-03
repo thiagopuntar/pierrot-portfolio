@@ -5,25 +5,15 @@ export const StyledA = styled.a`
   font-size: 0.875rem;
   position: relative;
   display: inline;
+  background-color: transparent;
 
   &:hover {
     transform: scale(105%);
   }
-
-  &:hover::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0.12rem;
-    background-color: ${(props) =>
-      props.isActive && props.theme.colors.secondary.z1};
-    height: 0.1rem;
-    width: 100%;
-    z-index: 10;
-  }
 `;
 
 export const Span = styled.span`
+  background-color: transparent;
   border-bottom: ${(props) =>
     props.isActive && `3px solid ${props.theme.colors.secondary.z1}`};
 
@@ -32,4 +22,8 @@ export const Span = styled.span`
     `
     font-weight: 700;
   `}
+
+  &:hover {
+    border-bottom: ${(props) => `3px solid ${props.theme.colors.secondary.z1}`};
+  }
 `;

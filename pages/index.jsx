@@ -6,9 +6,14 @@ import Jobs from "../components/Jobs";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Values from "../components/Values";
+import { breakAt } from "../constants/breakpoints";
 
 const Main = styled.main`
-  margin: 0 24px;
+  margin: 0 1.5rem;
+
+  ${breakAt("md")} {
+    margin-inline: 10%;
+  }
 `;
 
 export default function Home() {

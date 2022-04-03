@@ -2,9 +2,16 @@ import styled from "styled-components";
 import ResponsiveImage from "../ResponsiveImage";
 import { FcMenu } from "react-icons/fc";
 import Menu from "../Menu";
+import { breakAt } from "../../constants/breakpoints";
 
 export const Wrapper = styled.header`
   padding: 1.5rem;
+  position: relative;
+  overflow-x: clip;
+
+  ${breakAt("md")} {
+    padding: 1.5rem 10%;
+  }
 `;
 
 export const NavBar = styled.nav`
@@ -21,6 +28,10 @@ export const HamburguerButton = styled(FcMenu)`
   cursor: pointer;
   z-index: 3;
   animation: fade-in 0.3s ease-in;
+
+  ${breakAt("md")} {
+    display: none;
+  }
 
   @keyframes fade-in {
     0% {
@@ -45,6 +56,10 @@ export const StyledMenu = styled(Menu)`
   z-index: 2;
   animation: fade-in 0.3s ease-in;
 
+  ${breakAt("md")} {
+    display: none;
+  }
+
   @keyframes fade-in {
     0% {
       opacity: 0;
@@ -61,6 +76,18 @@ export const StyledMenu = styled(Menu)`
   }
 `;
 
+export const StyledMdMenu = styled(Menu)`
+  display: none;
+  gap: 4rem;
+  font-weight: bold;
+  z-index: 1;
+  background-color: transparent;
+
+  ${breakAt("md")} {
+    display: flex;
+  }
+`;
+
 export const MenuFrame = styled.div`
   height: 100vh;
   width: 100vw;
@@ -68,4 +95,21 @@ export const MenuFrame = styled.div`
   top: 0;
   z-index: 1;
   background: transparent;
+  ${breakAt("md")} {
+    display: none;
+  }
+`;
+
+export const ShadowBlur = styled.div`
+  ${breakAt("md")} {
+    position: absolute;
+    height: 572px;
+    width: 572px;
+    border-radius: 50%;
+    background-color: rgba(83, 38, 128, 0.25);
+    opacity: 0.6;
+    filter: blur(150px);
+    right: -350px;
+    top: -88px;
+  }
 `;
