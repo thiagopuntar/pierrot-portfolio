@@ -37,7 +37,7 @@ const AboutMe = () => {
           Tecnologia e inovação sempre foi uma paixão minha, adoro artes e criar
           desenhos e imagens. Descobrir no UX uma nova paixão.
         </p>
-        <Link href="/about">
+        <Link href="/about" passHref>
           <LinkWrapper>
             <Span>Saiba mais sobre mim</Span>
             <MdArrowRightAlt size={20} />

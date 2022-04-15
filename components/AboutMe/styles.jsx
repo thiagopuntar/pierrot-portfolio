@@ -80,4 +80,8 @@ export const LinkWrapper = styled.a`
   & * {
     color: ${(props) => props.theme.colors.primary.z1};
   }
+
+  ${breakAt("md")} {
+    font-weight: 700;
+  }
 `;
