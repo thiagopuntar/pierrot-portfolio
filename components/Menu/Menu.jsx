@@ -7,7 +7,7 @@ const Menu = ({ className }) => {
       <MenuLink name="Home" href="/" />
       <MenuLink name="Trabalhos" href="/works" />
       <MenuLink name="Sobre Mim" href="/about" />
-      <MenuLink name="Contato" href="/contact" />
+      <MenuLink name="Contato" href="/contact" variant="contact" />
     </ul>
   );
 };

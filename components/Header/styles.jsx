@@ -93,6 +93,7 @@ export const StyledMdMenu = styled(Menu)`
   font-weight: bold;
   z-index: 1;
   background-color: transparent;
+  align-items: center;
 
   ${breakAt("md")} {
     display: flex;
