@@ -1,7 +1,7 @@
 import React from "react";
 import JobCard from "./JobCard";
-import job2 from "../../public/img/job-2.jpg";
-import job3 from "../../public/img/job-3.png";
+import jobPortfolio from "../../public/img/job-portfolio.png";
+import jobCrypto from "../../public/img/job-crypto.png";
 import { H2, JobsWrapper, Wrapper } from "./styles";
 
 const Jobs = () => {
@@ -10,7 +10,7 @@ const Jobs = () => {
       <H2>Trabalhos</H2>
       <JobsWrapper>
         <JobCard
-          imageSrc={job2}
+          imageSrc={jobPortfolio}
           imageAlt="Portifólio"
           header="Criação do Portifólio"
           title="Portifólio"
@@ -21,11 +21,12 @@ const Jobs = () => {
         </JobCard>
 
         <JobCard
-          imageSrc={job3}
+          imageSrc={jobCrypto}
           imageAlt="Portifólio"
           header="Aplicativo de NFT"
           title="Cyber Crypto"
           href="/jobs/cyberCrypto"
+          align="right"
         >
           Desenvolvimento de design para um aplicativo de NFT, com elementos de
           carteira e compra de NFT
