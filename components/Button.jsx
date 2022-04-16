@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styled from "styled-components";
 
 const getBackgroundColor = (props) => {
@@ -49,12 +49,12 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = ({ children, className, variant, ...props }) => {
+const Button = ({ children, className, variant, ...props }, ref) => {
   return (
-    <StyledButton className={className} variant={variant} {...props}>
+    <StyledButton ref={ref} className={className} variant={variant} {...props}>
       {children}
     </StyledButton>
   );
 };
 
-export default Button;
+export default forwardRef(Button);
