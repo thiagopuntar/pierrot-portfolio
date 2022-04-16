@@ -26,7 +26,7 @@ const Header = () => {
         ) : (
           <HamburguerButton onClick={() => setIsOpen(true)} />
         )}
-        <StyledMdMenu />
+        <StyledMdMenu header />
       </NavBar>
       {isOpen && <MenuFrame onClick={() => setIsOpen(false)} />}
       <ShadowBlur />

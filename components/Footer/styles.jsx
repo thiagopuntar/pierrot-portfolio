@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakAt } from "../../constants/breakpoints";
 import Button from "../Button";
 import Menu from "../Menu";
 
@@ -11,6 +12,10 @@ export const Wrapper = styled.footer`
   & * {
     color: ${(props) => props.theme.colors.secondary.z1};
     background: ${(props) => props.theme.colors.primary.z5};
+  }
+
+  ${breakAt("md")} {
+    padding-inline: 10%;
   }
 `;
 
