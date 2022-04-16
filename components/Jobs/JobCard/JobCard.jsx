@@ -8,6 +8,7 @@ import {
   Title,
   Wrapper,
   StyledButton,
+  StyledImage,
 } from "./styles";
 
 const JobCard = ({
@@ -17,19 +18,20 @@ const JobCard = ({
   title,
   href,
   children,
+  align,
   className,
 }) => {
   return (
-    <Wrapper className={className}>
-      <ImageWrapper src={imageSrc} alt={imageAlt} />
-      <ContentWrapper>
+    <Wrapper className={className} align={align}>
+      <ImageWrapper align={align}>
+        <StyledImage src={imageSrc} alt={imageAlt} />
+      </ImageWrapper>
+      <ContentWrapper align={align}>
         <Header>{header}</Header>
         <Title>{title}</Title>
         <Text>{children}</Text>
-        <Link href={href}>
-          <a variant="secondary">
-            <StyledButton variant="secondary">Veja o Trabalho</StyledButton>
-          </a>
+        <Link href={href} passHref>
+          <StyledButton variant="secondary">Veja o Trabalho</StyledButton>
         </Link>
       </ContentWrapper>
     </Wrapper>

@@ -1,14 +1,26 @@
 import styled from "styled-components";
 import ResponsiveImage from "../../ResponsiveImage";
 import Button from "../../Button";
+import { breakAt } from "../../../constants/breakpoints";
 
 export const Wrapper = styled.div`
   margin-bottom: -5rem;
+  ${breakAt("md")} {
+    position: relative;
+    margin-bottom: 3em;
+    text-align: ${(props) => props.align || "left"};
+  }
 `;
 
-export const ImageWrapper = styled(ResponsiveImage)`
-  border: 1px solid ${(props) => props.theme.colors.primary.border} !important;
-  border-radius: 24px;
+export const ImageWrapper = styled.div`
+  ${breakAt("md")} {
+    position: relative;
+    ${(props) => (props.align === "right" ? "right: -6em" : "left: -6em;")}
+  }
+`;
+
+export const StyledImage = styled(ResponsiveImage)`
+  border-radius: 0;
 `;
 
 export const ContentWrapper = styled.div`
@@ -20,6 +32,16 @@ export const ContentWrapper = styled.div`
   margin: 0 auto;
   position: relative;
   top: -7rem;
+  box-shadow: 0px 4px 10px rgba(83, 38, 128, 0.5);
+
+  ${breakAt("md")} {
+    max-width: 346px;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    ${(props) => (props.align === "right" ? "left: -6em" : "right: -6em;")}
+  }
 `;
 
 export const Header = styled.h3`
@@ -28,7 +50,7 @@ export const Header = styled.h3`
   color: ${(props) => props.theme.colors.primary.z1};
   font-weight: bold;
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 0.5em;
 `;
 
 export const Title = styled.h4`
@@ -38,16 +60,20 @@ export const Title = styled.h4`
   font-family: "Playfair Display";
   font-weight: normal;
   text-align: center;
-  margin-bottom: 0.5rem;
 `;
 
 export const Text = styled.div`
   background-color: inherit;
+  font-size: 16px;
   text-align: center;
-  margin: 1rem 1rem 0 1rem;
+  margin: 1.5rem 1rem 0 1rem;
 `;
 
 export const StyledButton = styled(Button)`
   margin: 2.5rem 0 1rem;
   padding: 0.75rem;
+
+  ${breakAt("md")} {
+    margin: 1rem;
+  }
 `;
