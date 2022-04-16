@@ -10,7 +10,8 @@ export const Wrapper = styled.div`
   min-height: 224px;
 
   ${breakAt("md")} {
-    padding-top: 26px;
+    padding: 24px 8px;
+    max-width: 327px;
   }
 `;
 

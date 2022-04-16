@@ -12,10 +12,12 @@ export const H2 = styled.h2`
 `;
 
 export const CardWrapper = styled.div`
+  width: fit-content;
+  margin: 0 auto;
   ${breakAt("md")} {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    gap: 3em;
   }
 `;
 
