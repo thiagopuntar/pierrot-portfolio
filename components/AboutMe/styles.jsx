@@ -31,7 +31,7 @@ export const ShadowBlur = styled.div`
     background-color: #fff8b3;
     filter: blur(150px);
     opacity: 0.6;
-    left: -153px;
+    left: -25vw;
     top: -50px;
     z-index: 0;
   }

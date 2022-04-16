@@ -121,7 +121,7 @@ export const ShadowBlur = styled.div`
     background-color: rgba(83, 38, 128, 0.25);
     opacity: 0.6;
     filter: blur(150px);
-    right: -350px;
-    top: -88px;
+    right: -30vw;
+    top: -200px;
   }
 `;
