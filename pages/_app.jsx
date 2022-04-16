@@ -51,11 +51,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     ${breakAt("lg")} {
-      font-size: 22px;
+      font-size: 20px;
     }
 
     ${breakAt("xl")} {
-      font-size: 24px;
+      font-size: 22px;
     }
   }
 
