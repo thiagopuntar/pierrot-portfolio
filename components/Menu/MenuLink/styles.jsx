@@ -6,9 +6,25 @@ export const StyledA = styled.a`
   position: relative;
   display: inline;
   background-color: transparent;
+  transition: all 0.1s;
+  transition-property: transform, color;
 
   &:hover {
     transform: scale(105%);
+    color: ${(props) => props.theme.colors.secondary.z4};
+  }
+
+  & span {
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+
+    ${(props) =>
+      props.isActive &&
+      props.variant !== "contact" &&
+      `
+    color: ${props.theme.colors.secondary.z4}
+  `}
   }
 
   ${(props) =>
@@ -21,24 +37,4 @@ export const StyledA = styled.a`
     box-shadow: 0px 2px 3px rgba(83, 38, 128, 0.6);
     margin-left: 2em;
   `}
-`;
-
-export const Span = styled.span`
-  background-color: transparent;
-  font-size: inherit;
-  color: inherit;
-
-  border-bottom: ${(props) =>
-    props.isActive && `3px solid ${props.theme.colors.secondary.z1}`};
-
-  ${(props) =>
-    props.isActive &&
-    `
-    font-weight: 700;
-    font-size: 18px;
-  `}
-
-  &:hover {
-    border-bottom: ${(props) => `3px solid ${props.theme.colors.secondary.z1}`};
-  }
 `;
