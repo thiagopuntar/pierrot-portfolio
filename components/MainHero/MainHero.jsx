@@ -22,7 +22,12 @@ const MainHero = () => (
       </h2>
     </ContentWrapper>
     <ImageWrapper>
-      <ResponsiveImage src={imgHero1} alt="Thiago Castro" layout="responsive" />
+      <ResponsiveImage
+        src={imgHero1}
+        alt="Thiago Castro"
+        layout="responsive"
+        priority
+      />
     </ImageWrapper>
   </Wrapper>
 );

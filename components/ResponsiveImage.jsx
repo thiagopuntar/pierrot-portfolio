@@ -14,6 +14,7 @@ const ResponsiveImage = ({
   width,
   layout,
   objectFit,
+  priority = false,
 }) => {
   return (
     <StyledImage
@@ -24,6 +25,7 @@ const ResponsiveImage = ({
       width={width}
       layout={layout}
       objectFit={objectFit}
+      priority={priority}
     />
   );
 };
