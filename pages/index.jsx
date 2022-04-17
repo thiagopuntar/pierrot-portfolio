@@ -1,4 +1,3 @@
-import Head from "next/head";
 import MainHero from "../components/MainHero";
 import AboutMe from "../components/AboutMe";
 import styled from "styled-components";
@@ -16,18 +15,11 @@ const Main = styled.main`
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Thiago Castro</title>
-        <meta name="description" content="Thiago Castro" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Main>
-        <MainHero />
-        <AboutMe />
-        <Values />
-        <Jobs />
-      </Main>
-    </>
+    <Main>
+      <MainHero />
+      <AboutMe />
+      <Values />
+      <Jobs />
+    </Main>
   );
 }
