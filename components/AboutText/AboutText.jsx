@@ -8,6 +8,9 @@ import {
   ImageWrapper,
   Paragraph,
   Wrapper,
+  HardSkillsWrapper,
+  SoftSkillsWrapper,
+  HardSkillText,
 } from "./styles.jsx";
 import about1 from "../../public/img/about-me/about-1.png";
 import about2 from "../../public/img/about-me/about-2.png";
@@ -53,49 +56,63 @@ const AboutText = () => (
       <ResponsiveImage src={about3} />
     </ImageWrapper>
     <H1>Habilidades</H1>
-    <ResponsiveImage src={imgHardSkill} />
-    <H2>Hard Skills</H2>
-    <H3>Conhecimentos</H3>
-    <SkillList>
-      <li>Design Thinking</li>
-      <li>Pesquisas</li>
-      <li>Bechmarking</li>
-      <li>Teste de Usabilidade</li>
-      <li>Metodologia agil</li>
-      <li>Arquitetura de Informação</li>
-      <li>Escrita em UX</li>
-      <li>Comunicação Visual</li>
-      <li>Prototipagem</li>
-      <li>Wireframing</li>
-      <li>Desenho a mão livre</li>
-      <li>Inglês Instrumental (em desenvolvimento)</li>
-    </SkillList>
-    <H3>Softwares</H3>
-    <SkillList>
-      <li>Figma</li>
-      <li>Sketch</li>
-      <li>Adobe XD</li>
-      <li>Photoshop</li>
-      <li>Adobe Premiere</li>
-      <li>Wordpress</li>
-      <li>Javascript</li>
-      <li>HTML5 e CSS3</li>
-      <li>Miro</li>
-    </SkillList>
-    <H2>Soft Skills</H2>
-    <SkillList>
-      <li>
-        Resiliência (para lidar com situações de maneira adaptável e
-        colaborativa)
-      </li>
-      <li>Proatividade</li>
-      <li>Colaboração / trabalho em equipe</li>
-      <li>Prestativo</li>
-      <li>Empatia ao problema do outro</li>
-      <li>Vontade de aprender sempre</li>
-      Persistência
-    </SkillList>
-    <ResponsiveImage src={imgSoftSkill} />
+    <HardSkillsWrapper>
+      <ResponsiveImage src={imgHardSkill} />
+      <div>
+        <H2>Hard Skills</H2>
+        <HardSkillText>
+          <div>
+            <H3>Conhecimentos</H3>
+            <SkillList>
+              <li>Design Thinking</li>
+              <li>Pesquisas</li>
+              <li>Bechmarking</li>
+              <li>Teste de Usabilidade</li>
+              <li>Metodologia agil</li>
+              <li>Arquitetura de Informação</li>
+              <li>Escrita em UX</li>
+              <li>Comunicação Visual</li>
+              <li>Prototipagem</li>
+              <li>Wireframing</li>
+              <li>Desenho a mão livre</li>
+              <li>Inglês Instrumental (em desenvolvimento)</li>
+            </SkillList>
+          </div>
+          <div>
+            <H3>Softwares</H3>
+            <SkillList>
+              <li>Figma</li>
+              <li>Sketch</li>
+              <li>Adobe XD</li>
+              <li>Photoshop</li>
+              <li>Adobe Premiere</li>
+              <li>Wordpress</li>
+              <li>Javascript</li>
+              <li>HTML5 e CSS3</li>
+              <li>Miro</li>
+            </SkillList>
+          </div>
+        </HardSkillText>
+      </div>
+    </HardSkillsWrapper>
+    <SoftSkillsWrapper>
+      <div>
+        <H2>Soft Skills</H2>
+        <SkillList>
+          <li>
+            Resiliência (para lidar com situações de maneira adaptável e
+            colaborativa)
+          </li>
+          <li>Proatividade</li>
+          <li>Colaboração / trabalho em equipe</li>
+          <li>Prestativo</li>
+          <li>Empatia ao problema do outro</li>
+          <li>Vontade de aprender sempre</li>
+          <li>Persistência</li>
+        </SkillList>
+      </div>
+      <ResponsiveImage src={imgSoftSkill} />
+    </SoftSkillsWrapper>
   </Wrapper>
 );
 

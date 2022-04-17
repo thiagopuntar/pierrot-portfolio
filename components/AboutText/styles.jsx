@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakAt } from "../../constants/breakpoints";
 
 export const Wrapper = styled.section`
   margin-top: 1.5em;
@@ -15,12 +16,19 @@ export const ImageWrapper = styled.div`
   flex-direction: column;
   gap: 1em;
   margin-top: 2.5rem;
+
+  ${breakAt("md")} {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+  }
 `;
 
 export const H1 = styled.h1`
   text-transform: uppercase;
   font-family: "Poppins";
   font-weight: normal;
+  text-align: center;
   font-size: 1.5rem;
   margin-top: 2.7em;
   margin-bottom: 1em;
@@ -34,6 +42,31 @@ export const H2 = styled.h2`
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
+`;
+
+export const HardSkillsWrapper = styled.div`
+  ${breakAt("md")} {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+`;
+
+export const HardSkillText = styled.div`
+  ${breakAt("md")} {
+    display: flex;
+    justify-content: space-between;
+  }
+`;
+
+export const SoftSkillsWrapper = styled.div`
+  ${breakAt("md")} {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3rem;
+  }
 `;
 
 export const H3 = styled.h3``;
@@ -44,6 +77,7 @@ export const SkillList = styled.ul`
   padding-left: 1.5rem;
 
   & li {
+    font-size: 0.875rem;
     list-style: disc;
   }
 `;
