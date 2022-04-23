@@ -8,9 +8,10 @@ export const Wrapper = styled.div`
   padding: 8px 8px 0 8px;
   transition: 0.2s ease-out;
   min-height: 224px;
+  position: relative;
 
   ${breakAt("md")} {
-    padding: 24px 8px;
+    padding: 1.5rem 1rem;
     max-width: 327px;
   }
 `;
