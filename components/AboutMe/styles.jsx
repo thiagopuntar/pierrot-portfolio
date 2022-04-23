@@ -8,12 +8,13 @@ export const H1 = styled.h1`
   margin-bottom: 1rem;
 `;
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
   margin: 2.5rem 0 5rem;
   position: relative;
   background-color: transparent;
 
   ${breakAt("md")} {
+    margin: 7rem 0 5rem;
     display: flex;
     align-items: flex-start;
     gap: 5%;
@@ -59,12 +60,21 @@ export const LinkWrapper = styled.a`
   margin-top: 1rem;
   display: flex;
   align-items: center;
+  text-decoration: none;
   gap: 0.625rem;
   & * {
     color: ${(props) => props.theme.colors.primary.z1};
   }
 
+  .arrow-right {
+    font-size: 24px;
+  }
+
   ${breakAt("md")} {
     font-weight: 700;
+
+    .arrow-right {
+      font-size: 40px;
+    }
   }
 `;

@@ -39,7 +39,7 @@ const AboutMe = () => {
         <Link href="/about" passHref>
           <LinkWrapper>
             <Span>Saiba mais sobre mim</Span>
-            <MdArrowRightAlt size={20} />
+            <MdArrowRightAlt className="arrow-right" />
           </LinkWrapper>
         </Link>
         <ButtonWrapper>
