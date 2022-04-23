@@ -4,12 +4,13 @@ import { breakAt } from "../../constants/breakpoints";
 export const Wrapper = styled.section`
   ${breakAt("md")} {
     display: flex;
-    gap: 5rem;
-    margin: 0 auto 5.5rem;
+    gap: 6rem;
   }
 `;
 
-export const TextWrapper = styled.div``;
+export const TextWrapper = styled.div`
+  flex-shrink: 1;
+`;
 
 export const H1 = styled.h1`
   text-transform: uppercase;
@@ -21,7 +22,7 @@ export const H1 = styled.h1`
 `;
 
 export const ImageWrapper = styled.div`
-  width: 80%;
+  flex: 1 0 354px;
 `;
 
 export const Paragraph = styled.p`

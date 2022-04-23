@@ -11,10 +11,11 @@ import {
   HardSkillsWrapper,
   SoftSkillsWrapper,
   HardSkillText,
+  HardSkillImg,
 } from "./styles.jsx";
-import about1 from "../../public/img/about-me/about-1.png";
-import about2 from "../../public/img/about-me/about-2.png";
-import about3 from "../../public/img/about-me/about-3.png";
+import about1 from "../../public/img/about-me/about-1.jpg";
+import about2 from "../../public/img/about-me/about-2.jpg";
+import about3 from "../../public/img/about-me/about-3.jpg";
 import imgHardSkill from "../../public/img/about-me/hard-skills.png";
 import imgSoftSkill from "../../public/img/about-me/soft-skills.png";
 
@@ -57,7 +58,9 @@ const AboutText = () => (
     </ImageWrapper>
     <H1>Habilidades</H1>
     <HardSkillsWrapper>
-      <ResponsiveImage src={imgHardSkill} />
+      <HardSkillImg>
+        <ResponsiveImage src={imgHardSkill} />
+      </HardSkillImg>
       <div>
         <H2>Hard Skills</H2>
         <HardSkillText>

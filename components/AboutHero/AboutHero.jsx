@@ -7,7 +7,7 @@ import {
   TextWrapper,
   Wrapper,
 } from "./styles.jsx";
-import hero from "../../public/img/about-me/hero.png";
+import hero from "../../public/img/about-me/hero.jpg";
 
 const AboutHero = () => (
   <Wrapper>
@@ -20,7 +20,12 @@ const AboutHero = () => (
       </Paragraph>
     </TextWrapper>
     <ImageWrapper>
-      <ResponsiveImage layout="responsive" src={hero} alt="Thiago Castro" />
+      <ResponsiveImage
+        className="hero-image"
+        src={hero}
+        alt="Thiago Castro"
+        priority
+      />
     </ImageWrapper>
   </Wrapper>
 );
