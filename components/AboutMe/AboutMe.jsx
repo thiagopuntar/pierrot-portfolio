@@ -13,7 +13,6 @@ import {
   Span,
   LinkWrapper,
   ImageWrapper,
-  ShadowBlur,
 } from "./styles";
 
 const AboutMe = () => {
@@ -55,7 +54,6 @@ const AboutMe = () => {
           </StyledButton>
         </ButtonWrapper>
       </ContentWrapper>
-      <ShadowBlur />
     </Wrapper>
   );
 };

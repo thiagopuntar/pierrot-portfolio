@@ -8,14 +8,11 @@ export const ContactWrapper = styled.div`
   ${breakAt("md")} {
     display: flex;
     padding: 5rem 10rem;
+    gap: 2rem;
   }
 `;
 
-export const FormWrapper = styled.div`
-  ${breakAt("md")} {
-    padding: 0 2rem;
-  }
-`;
+export const FormWrapper = styled.div``;
 
 export const ImageWrapper = styled.div`
   flex-shrink: 0;
@@ -36,6 +33,9 @@ export const Paragraph = styled.p`
 `;
 
 export const Form = styled.form`
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
   margin-bottom: 2.5rem;
 `;
 

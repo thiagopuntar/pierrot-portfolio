@@ -10,6 +10,7 @@ import {
   StyledMdMenu,
   ShadowBlur,
   LogoWrapper,
+  ShadowBlurMiddle,
 } from "./styles.jsx";
 
 const Header = () => {
@@ -30,6 +31,7 @@ const Header = () => {
       </NavBar>
       {isOpen && <MenuFrame onClick={() => setIsOpen(false)} />}
       <ShadowBlur />
+      <ShadowBlurMiddle />
     </Wrapper>
   );
 };

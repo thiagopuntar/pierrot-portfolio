@@ -23,7 +23,11 @@ const Contact = () => {
         <Form>
           <Input label="Nome ou apelido (você decide)" id="name" />
           <Input label="Email" id="email" />
-          <Input label="Mensagem" id="message" type="textarea" />
+          <Input
+            label="Mensagem, dúvida, idéia ou simplesmente crítica, pode mandar...."
+            id="message"
+            type="textarea"
+          />
           <StyledButton variant="secondary" type="submit">
             Enviar mensagem
           </StyledButton>

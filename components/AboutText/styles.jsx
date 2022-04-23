@@ -3,6 +3,13 @@ import { breakAt } from "../../constants/breakpoints";
 
 export const Wrapper = styled.section`
   margin-top: 1.5em;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+
+  & * {
+    background-color: transparent;
+  }
 `;
 
 export const Paragraph = styled.p`

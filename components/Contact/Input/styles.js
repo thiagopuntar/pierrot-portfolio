@@ -5,6 +5,7 @@ export const InputWrapper = styled.div`
   flex-direction: column-reverse;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  background-color: transparent;
 `;
 
 export const StyledInput = styled.input`
@@ -26,6 +27,7 @@ export const StyledInput = styled.input`
 
 export const Label = styled.label`
   font-size: 1.125rem;
+  background-color: transparent;
 `;
 
 export const StyledTextArea = styled.textarea`

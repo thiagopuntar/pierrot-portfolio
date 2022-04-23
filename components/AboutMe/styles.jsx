@@ -11,29 +11,12 @@ export const H1 = styled.h1`
 export const Wrapper = styled.div`
   margin: 2.5rem 0 5rem;
   position: relative;
+  background-color: transparent;
 
   ${breakAt("md")} {
     display: flex;
     align-items: flex-start;
     gap: 5%;
-  }
-`;
-
-export const ShadowBlur = styled.div`
-  display: none;
-
-  ${breakAt("md")} {
-    position: absolute;
-    display: block;
-    border-radius: 50%;
-    height: 562px;
-    width: 562px;
-    background-color: #fff8b3;
-    filter: blur(150px);
-    opacity: 0.6;
-    left: -25vw;
-    top: -50px;
-    z-index: 0;
   }
 `;
 

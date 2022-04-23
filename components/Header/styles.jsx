@@ -125,3 +125,21 @@ export const ShadowBlur = styled.div`
     top: -200px;
   }
 `;
+
+export const ShadowBlurMiddle = styled.div`
+  display: none;
+
+  ${breakAt("md")} {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    height: 562px;
+    width: 562px;
+    background-color: #fff8b3;
+    filter: blur(150px);
+    opacity: 0.6;
+    left: -153px;
+    top: 700px;
+    z-index: 0;
+  }
+`;
