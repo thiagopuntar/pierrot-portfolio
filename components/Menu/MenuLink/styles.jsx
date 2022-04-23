@@ -11,7 +11,9 @@ export const StyledA = styled.a`
 
   &:hover {
     transform: scale(105%);
-    color: ${(props) => props.theme.colors.secondary.z4};
+    ${(props) =>
+      props.variant !== "contact" &&
+      `color: ${props.theme.colors.secondary.z4};`}
   }
 
   & span {
@@ -23,7 +25,16 @@ export const StyledA = styled.a`
       props.isActive &&
       props.variant !== "contact" &&
       `
-    color: ${props.theme.colors.secondary.z4}
+    color: ${props.theme.colors.secondary.z4};
+    font-size: 20px;
+  `}
+
+    ${(props) =>
+      props.isActive &&
+      props.variant === "contact" &&
+      `
+    color: ${props.theme.colors.primary.z1};
+    font-size: 20px;
   `}
   }
 

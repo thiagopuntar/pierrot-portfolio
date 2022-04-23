@@ -1,35 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../../public/img/Logo.png";
 import {
   StyledLogo,
   NavBar,
   Wrapper,
-  HamburguerButton,
-  StyledMenu,
-  MenuFrame,
-  StyledMdMenu,
   ShadowBlur,
   LogoWrapper,
   ShadowBlurMiddle,
 } from "./styles.jsx";
+import MenuHeader from "../Menu/MenuHeader";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <Wrapper>
       <NavBar>
         <LogoWrapper>
           <StyledLogo src={logo} alt="Logo" layout="fill" objectFit="cover" />
         </LogoWrapper>
-        {isOpen ? (
-          <StyledMenu />
-        ) : (
-          <HamburguerButton onClick={() => setIsOpen(true)} />
-        )}
-        <StyledMdMenu header />
+        <MenuHeader />
       </NavBar>
-      {isOpen && <MenuFrame onClick={() => setIsOpen(false)} />}
       <ShadowBlur />
       <ShadowBlurMiddle />
     </Wrapper>
