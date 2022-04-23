@@ -1,5 +1,25 @@
 import styled from "styled-components";
+import { breakAt } from "../../constants/breakpoints";
 import Button from "../Button";
+
+export const ContactWrapper = styled.div`
+  padding: 1.5rem;
+
+  ${breakAt("md")} {
+    display: flex;
+    padding: 5rem 10rem;
+  }
+`;
+
+export const FormWrapper = styled.div`
+  ${breakAt("md")} {
+    padding: 0 2rem;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  flex-shrink: 0;
+`;
 
 export const H1 = styled.h1`
   color: ${(props) => props.theme.colors.primary.z1};

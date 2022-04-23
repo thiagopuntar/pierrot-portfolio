@@ -10,7 +10,8 @@ export const InputWrapper = styled.div`
 export const StyledInput = styled.input`
   background-color: ${(props) => props.theme.colors.white.z1};
   border-radius: 10px;
-  padding: 10px;
+  padding-inline: 10px;
+  min-height: 50px;
   border: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 

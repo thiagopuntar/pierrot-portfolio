@@ -6,7 +6,7 @@ const Input = ({ type, label, id }) => {
 
   return (
     <InputWrapper>
-      <InputComponent rows="7" id={id} name={id} />
+      <InputComponent rows="5" id={id} name={id} />
       <Label htmlFor={id}>{label}</Label>
     </InputWrapper>
   );
