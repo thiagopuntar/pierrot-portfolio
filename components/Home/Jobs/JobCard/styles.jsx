@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import ResponsiveImage from "../../ResponsiveImage";
-import Button from "../../Button";
-import { breakAt } from "../../../constants/breakpoints";
+import ResponsiveImage from "../../../ResponsiveImage";
+import Button from "../../../Button";
+import { breakAt } from "../../../../constants/breakpoints";
 
 export const Wrapper = styled.div`
   margin-bottom: -5rem;

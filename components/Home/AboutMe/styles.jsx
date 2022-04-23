@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { breakAt } from "../../constants/breakpoints";
-import Button from "../Button";
+import { breakAt } from "../../../constants/breakpoints";
+import Button from "../../Button";
 
 export const H1 = styled.h1`
   font-family: Poppins;

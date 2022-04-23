@@ -1,8 +1,8 @@
-import MainHero from "../components/MainHero";
-import AboutMe from "../components/AboutMe";
 import styled from "styled-components";
-import Jobs from "../components/Jobs";
-import Values from "../components/Values";
+import MainHero from "../components/Home/MainHero";
+import AboutMe from "../components/Home/AboutMe";
+import Jobs from "../components/Home/Jobs";
+import Values from "../components/Home/Values";
 import { breakAt } from "../constants/breakpoints";
 
 const Main = styled.main`

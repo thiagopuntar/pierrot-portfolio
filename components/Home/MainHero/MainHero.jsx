@@ -1,7 +1,7 @@
 import React from "react";
-import ResponsiveImage from "../ResponsiveImage";
+import ResponsiveImage from "../../ResponsiveImage";
 import { MdLocationOn } from "react-icons/md";
-import imgHero1 from "../../public/img/img-hero-1.jpg";
+import imgHero1 from "../../../public/img/img-hero-1.jpg";
 import { Location, ContentWrapper, H1, Wrapper, ImageWrapper } from "./styles";
 
 const MainHero = () => (

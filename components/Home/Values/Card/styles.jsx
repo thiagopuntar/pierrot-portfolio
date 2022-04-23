@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { breakAt } from "../../../constants/breakpoints";
+import { breakAt } from "../../../../constants/breakpoints";
 
 export const Wrapper = styled.div`
   border-radius: 24px;

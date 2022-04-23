@@ -1,8 +1,8 @@
 import React from "react";
 import { MdArrowRightAlt } from "react-icons/md";
-import imgHero2 from "../../public/img/img-hero-2.jpg";
-import { linkedinLink, resume } from "../../constants/links";
-import ResponsiveImage from "../ResponsiveImage";
+import imgHero2 from "../../../public/img/img-hero-2.jpg";
+import { linkedinLink, resume } from "../../../constants/links";
+import ResponsiveImage from "../../ResponsiveImage";
 import Link from "next/link";
 import {
   H1,

@@ -1,7 +1,7 @@
 import React from "react";
 import JobCard from "./JobCard";
-import jobPortfolio from "../../public/img/job-portfolio.png";
-import jobCrypto from "../../public/img/job-crypto.png";
+import jobPortfolio from "../../../public/img/job-portfolio.png";
+import jobCrypto from "../../../public/img/job-crypto.png";
 import { H2, JobsWrapper, Wrapper } from "./styles";
 
 const Jobs = () => {
