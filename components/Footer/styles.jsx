@@ -45,6 +45,14 @@ export const ProfileWrapper = styled.ul`
   & * {
     color: ${(props) => props.theme.colors.white.z2};
   }
+
+  & a {
+    text-decoration: none;
+  }
+`;
+
+export const JobsWrapper = styled.ul`
+  margin-left: 1em;
 `;
 
 export const SocialWrapper = styled.div`
