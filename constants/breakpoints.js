@@ -5,3 +5,5 @@ const breakpoints = {
 };
 
 export const breakAt = (point) => `@media (min-width: ${breakpoints[point]}px)`;
+export const breakUntil = (point) =>
+  `@media (max-width: ${breakpoints[point]}px)`;

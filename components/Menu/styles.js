@@ -1,31 +1,19 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { FcMenu } from "react-icons/fc";
-import { breakAt } from "../../constants/breakpoints";
-
-export const Wrapper = styled.div``;
+import { breakAt, breakUntil } from "../../constants/breakpoints";
 
 export const HamburguerButton = styled(FcMenu)`
   cursor: pointer;
   z-index: 3;
-  animation: fade-in 0.3s ease-in;
 
   ${breakAt("md")} {
     display: none;
-  }
-
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
 `;
 
 export const MenuWrapper = styled.ul`
   ${({ isOpen }) => (isOpen ? "display: flex" : "display: none")};
-  background-color: ${(props) => props.theme.colors.white.z2};
+  background-color: ${({ theme }) => theme.colors.white.z2};
   padding: 0.75rem;
   border-radius: 16px;
   flex-direction: column;
@@ -47,34 +35,62 @@ export const MenuWrapper = styled.ul`
 
   & * {
     background-color: inherit;
-    font-size: 0.8rem;
     line-height: 1rem;
+  }
+
+  ${breakAt("md")} {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+    gap: 1.25em;
+    background-color: transparent;
+    flex: 1 1 100%;
+    max-width: 600px;
   }
 `;
 
-// export const StyledMdMenu = styled(Menu)`
-//   display: none;
-//   gap: 4rem;
-//   font-weight: bold;
-//   z-index: 1;
-//   background-color: transparent;
-//   align-items: center;
+const activeMobileStyle = css`
+  border-bottom: 2px solid ${({ theme }) => theme.colors.secondary.z4};
+  font-weight: bold;
+`;
 
-//   ${breakAt("md")} {
-//     display: flex;
-//   }
-// `;
+const activeDesktopStyle = css`
+  color: ${({ theme }) => theme.colors.secondary.z4};
+  /* font-size: 1.25rem; */
+`;
+
+const contactStyle = css`
+  border: 2px solid ${({ theme }) => theme.colors.primary.z1};
+  border-radius: 20px;
+  color: ${({ theme }) => theme.colors.primary.z1};
+  padding: 0.5em 1em;
+  margin-left: 1.5em;
+`;
 
 export const StyledLink = styled.li`
   & a {
     text-decoration: none;
+    font-size: 0.8rem;
 
-    ${({ isActive, theme }) =>
-      isActive &&
-      `
-      border-bottom: 2px solid ${theme.colors.secondary.z4};
+    ${breakUntil("md")} {
+      ${({ isActive }) => isActive && activeMobileStyle};
+    }
+
+    ${breakAt("md")} {
+      font-size: 1.125rem;
       font-weight: bold;
-      `};
+
+      ${({ isActive }) => isActive && activeDesktopStyle};
+    }
+
+    &:hover {
+      ${activeDesktopStyle};
+    }
+
+    ${({ variant }) => variant === "contact" && contactStyle}
   }
 `;
 
@@ -83,4 +99,19 @@ export const SubMenuWrapper = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+
+  ${breakAt("md")} {
+    display: none;
+    position: absolute;
+    background-color: ${({ theme }) => theme.colors.white.z2};
+    border-radius: 16px;
+    padding: 1em;
+
+    & a {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+
+    ${({ isExpanded }) => isExpanded && "display: flex;"}
+  }
 `;

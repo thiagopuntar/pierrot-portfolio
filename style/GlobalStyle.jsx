@@ -14,18 +14,6 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.colors.bg.white};
     box-sizing: border-box;
     color: ${theme.colors.black.z1};
-
-    ${breakAt("md")} {
-      font-size: 18px;
-    }
-
-    ${breakAt("lg")} {
-      font-size: 20px;
-    }
-
-    ${breakAt("xl")} {
-      font-size: 22px;
-    }
   }
 
   h1 {
