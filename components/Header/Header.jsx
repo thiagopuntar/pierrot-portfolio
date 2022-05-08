@@ -8,7 +8,7 @@ import {
   LogoWrapper,
   ShadowBlurMiddle,
 } from "./styles.jsx";
-import MenuHeader from "../Menu/MenuHeader";
+import Menu from "../Menu";
 
 const Header = () => {
   return (
@@ -17,7 +17,7 @@ const Header = () => {
         <LogoWrapper>
           <StyledLogo src={logo} alt="Logo" layout="fill" objectFit="cover" />
         </LogoWrapper>
-        <MenuHeader />
+        <Menu />
       </NavBar>
       <ShadowBlur />
       <ShadowBlurMiddle />
