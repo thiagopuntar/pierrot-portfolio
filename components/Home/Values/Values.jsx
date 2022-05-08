@@ -1,5 +1,5 @@
 import React from "react";
-import { H2, CardWrapper, StyledCard } from "./styles";
+import { Wrapper, H2, CardWrapper, StyledCard } from "./styles";
 
 const Values = () => {
   const data = [
@@ -30,7 +30,7 @@ const Values = () => {
   ];
 
   return (
-    <section>
+    <Wrapper>
       <H2>Valores e Princípios</H2>
       <CardWrapper>
         {data.map(({ title, body }) => (
@@ -39,7 +39,7 @@ const Values = () => {
           </StyledCard>
         ))}
       </CardWrapper>
-    </section>
+    </Wrapper>
   );
 };
 

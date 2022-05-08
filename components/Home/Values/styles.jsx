@@ -2,6 +2,11 @@ import Card from "./Card";
 import styled from "styled-components";
 import { breakAt } from "../../../constants/breakpoints";
 
+export const Wrapper = styled.section`
+  position: relative;
+  background-color: transparent;
+`;
+
 export const H2 = styled.h2`
   font-size: 1.5rem;
   font-weight: bold;

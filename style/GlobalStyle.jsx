@@ -1,15 +1,15 @@
 import { createGlobalStyle } from "styled-components";
-import { breakAt } from "../constants/breakpoints";
 import { theme } from "./theme";
 
 const GlobalStyle = createGlobalStyle`
-  * {
+  *, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    background-color: inherit;
   }
 
-  html, body, * {
+  html, body {
     font-family: "Poppins";
     background-color: ${(props) => props.theme.colors.bg.white};
     box-sizing: border-box;
