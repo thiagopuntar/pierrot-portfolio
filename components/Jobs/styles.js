@@ -7,34 +7,44 @@ export const Main = styled.main`
   background-color: transparent;
 
   ${breakAt("md")} {
-    padding-inline: 11.5rem;
+    padding-inline: 0;
+    width: 70%;
+    max-width: 1008px;
+    margin: 0 auto;
   }
 `;
 
 export const H1 = styled.h1`
   text-align: center;
-  font-size: 28px;
-  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  margin-bottom: 1em;
 `;
 
 export const H2 = styled.h2`
   margin-bottom: 3rem;
+  text-align: center;
 `;
 
 export const H3 = styled.h3`
-  background-color: transparent;
+  font-size: 1.25rem;
+  margin: 1em 0;
 `;
 
 export const Paragraph = styled.p`
-  background-color: transparent;
-
-  & ul {
-    background-color: transparent;
-  }
-
   & li {
-    background-color: transparent;
     list-style: disc;
-    margin-left: 1.5rem;
+    margin-left: 1.5em;
+  }
+`;
+
+export const StyledImage = styled.div`
+  margin: 4em 0;
+`;
+
+export const Columns = styled.div`
+  ${breakAt("md")} {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 `;

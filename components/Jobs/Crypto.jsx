@@ -1,8 +1,16 @@
 import React from "react";
 import ResponsiveImage from "../ResponsiveImage";
-import { H1, H2, H3, Main, Paragraph } from "./styles";
+import { Columns, H1, H2, H3, Main, Paragraph, StyledImage } from "./styles";
 import imgHero from "../../public/img/jobs/crypto/hero.png";
 import imgProject from "../../public/img/jobs/crypto/project.png";
+import imgWireframe from "../../public/img/jobs/crypto/wireframe.png";
+import imgCrypto1 from "../../public/img/jobs/crypto/crypto-1.png";
+import imgCrypto2 from "../../public/img/jobs/crypto/crypto-2.png";
+import imgButtons from "../../public/img/jobs/crypto/buttons.png";
+import imgColors from "../../public/img/jobs/crypto/colors.png";
+import imgFont from "../../public/img/jobs/crypto/font.png";
+import imgIcons from "../../public/img/jobs/crypto/icons.png";
+import imgStyleGuide from "../../public/img/jobs/crypto/style-guide.png";
 
 const Crypto = () => {
   return (
@@ -13,7 +21,9 @@ const Crypto = () => {
         minhas habilidades com a ferramenta FIgma, desenvolvi fluxo de um
         aplicativo de NFT.
       </H2>
-      <ResponsiveImage src={imgHero} />
+      <StyledImage>
+        <ResponsiveImage src={imgHero} />
+      </StyledImage>
       <H3>O desafio</H3>
       <Paragraph>
         Durante um período de estudo no desenvolvimento e aperfeiçoamento das
@@ -47,11 +57,56 @@ const Crypto = () => {
           </li>
         </ul>
       </Paragraph>
-      <ResponsiveImage src={imgProject} />
+      <StyledImage>
+        <ResponsiveImage src={imgProject} />
+      </StyledImage>
       <H3>Wireframe</H3>
       <Paragraph>
         Primeiro passo do processo foi a criação da ideia e o que iria ser
         desenvolvido no fluxo
+      </Paragraph>
+      <StyledImage>
+        <ResponsiveImage src={imgWireframe} />
+      </StyledImage>
+      <H3>Alta fidelidade</H3>
+      <Paragraph>
+        Primeiro passo do processo foi a criação da ideia e o que iria ser
+        desenvolvido no fluxo
+      </Paragraph>
+      <StyledImage>
+        <ResponsiveImage src={imgCrypto1} />
+      </StyledImage>
+      <StyledImage>
+        <ResponsiveImage src={imgCrypto2} />
+      </StyledImage>
+      <H3>Style Guide</H3>
+      <Paragraph>
+        Primeiro passo do processo foi a criação da ideia e o que iria ser
+        desenvolvido no fluxo
+      </Paragraph>
+      <StyledImage>
+        <ResponsiveImage src={imgStyleGuide} />
+      </StyledImage>
+      <StyledImage>
+        <ResponsiveImage src={imgFont} />
+      </StyledImage>
+      <StyledImage>
+        <ResponsiveImage src={imgColors} />
+      </StyledImage>
+      <Columns>
+        <ResponsiveImage src={imgButtons} />
+        <ResponsiveImage src={imgIcons} />
+      </Columns>
+      <H3>Proximos Passos</H3>
+      <Paragraph>
+        Termino esse trabalho, deixando sempre em aberto a modificações, pois o
+        portifólio é o “cartão de boas vindas” do seu criador, logo está sujeito
+        sempre a modificações e melhoramento, novas experiencias e conhecimentos
+        levam a esse melhoramento, sempre estamos aprendendo coisas novas e o
+        portifolio participa integralmente dessa mudança e aprendizado. Agradeço
+        a todos que participaram, direta e indiretamente da elaboração desse
+        trabalho (fotografia, testando prototipo, dando feedback e auxiliando no
+        desenvolvimento e criação).
       </Paragraph>
     </Main>
   );
