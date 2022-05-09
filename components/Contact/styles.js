@@ -3,11 +3,8 @@ import { breakAt } from "../../constants/breakpoints";
 import Button from "../Button";
 
 export const ContactWrapper = styled.div`
-  padding: 1.5rem;
-
   ${breakAt("md")} {
     display: flex;
-    padding: 5rem 10rem;
     gap: 2rem;
   }
 `;

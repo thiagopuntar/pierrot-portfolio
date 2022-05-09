@@ -1,19 +1,6 @@
 import styled from "styled-components";
 import { breakAt } from "../../constants/breakpoints";
 
-export const Main = styled.main`
-  padding-inline: 1.5rem;
-  position: relative;
-  background-color: transparent;
-
-  ${breakAt("md")} {
-    padding-inline: 0;
-    width: 70%;
-    max-width: 1008px;
-    margin: 0 auto;
-  }
-`;
-
 export const H1 = styled.h1`
   text-align: center;
   font-size: 1.75rem;

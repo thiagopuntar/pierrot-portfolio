@@ -4,6 +4,7 @@ import Button from "../Button";
 import Menu from "../Menu";
 
 export const Wrapper = styled.footer`
+  position: relative;
   padding: 1.5rem;
   background: ${(props) => props.theme.colors.primary.z5};
   margin-top: 7.5rem;
@@ -11,7 +12,6 @@ export const Wrapper = styled.footer`
 
   & * {
     color: ${(props) => props.theme.colors.secondary.z1};
-    background: ${(props) => props.theme.colors.primary.z5};
   }
 
   ${breakAt("md")} {
