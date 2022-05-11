@@ -24,6 +24,8 @@ export const H4 = styled.h4`
 `;
 
 export const Paragraph = styled.p`
+  ${({ spaced }) => spaced && "margin: 1em 0;"};
+
   & li {
     list-style: disc;
     list-style-position: inside;
@@ -38,6 +40,10 @@ export const Paragraph = styled.p`
 export const Ol = styled.ol`
   margin: 1em 0;
   list-style-position: inside;
+
+  li {
+    margin: 1em 0;
+  }
 `;
 
 export const StyledImage = styled.div`

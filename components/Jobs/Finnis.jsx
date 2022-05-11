@@ -71,7 +71,7 @@ const Finnis = () => {
         calçado e vestuário, refeições delivery e fora de casa, idas a bares e
         casas noturnas.
       </Paragraph>
-      <Paragraph>
+      <Paragraph spaced>
         <strong>
           Com relação aos projetos para 2020 que envolviam planejamento
           financeiro. Os mais citados foram o pagamento de dívidas atrasadas, a
@@ -100,7 +100,7 @@ const Finnis = () => {
         poupam no mínimo 10% de seus salários, sem período de um ano.
       </Paragraph>
       <H3>Usuários</H3>
-      <Paragraph>
+      <Paragraph spaced>
         <em>Perfil dos usuários</em>
       </Paragraph>
       <Paragraph>
@@ -343,17 +343,13 @@ const Finnis = () => {
         realidade da solução buscada. O novo teste foi realizado também na
         plataforma Maze com 18 usuários. Alguns testículos foram moderados.
       </Paragraph>
-      <Paragraph>
-        <br />
-        Nossos principais aprendizados foram:
-      </Paragraph>
+      <Paragraph spaced>Nossos principais aprendizados foram:</Paragraph>
       <Ol>
         <li>
           Ao mudar o estilo do botão e o texto, aumentamos a taxa de sucesso o
           que levou aos usuários, a conseguirem identificar com mais precisão o
           que deveria ser estabelecido;
         </li>
-        <br />
         <li>
           O botão para “adicionar objetivo” precisa ter mais visibilidade na
           tela, sem necessidade de scrollar para encontrar-lo, identificamos um
@@ -395,8 +391,7 @@ const Finnis = () => {
         reformulada. Sem a pesquisa, provavelmente estaríamos investindo os
         nossos esforços e tempo em um projeto fadado ao fracasso.
       </Paragraph>
-      <Paragraph>
-        <br />
+      <Paragraph spaced>
         Após avaliação e mapeamento de todas as necessidades e dores dos
         usuários, decidimos optar primordialmente por uma solução em que
         controlasse e informasse os ganhos e gastos do usuário assim como um
@@ -404,13 +399,13 @@ const Finnis = () => {
         para futuras metas/sonhos, como por exemplo executar uma viagem ou
         comprar um celular novo…
       </Paragraph>
-      <Paragraph>
-        <br />
+      <Paragraph spaced>
         Pretendemos no futuro acrescentar algumas oportunidades encontradas
         durante o mapeamento da jornada, e não priorizadas na matriz esforço x
         impacto, como:
+      </Paragraph>
+      <Paragraph>
         <ul>
-          <br />
           <li>Mapeamento e personalização de hábitos financeiros;</li>
           <li>Sugestão de produtos e serviços mais em conta;</li>
           <li>Dicas e fórum de educação financeira;</li>
@@ -422,7 +417,7 @@ const Finnis = () => {
       <ul>
         <li>Allan Lima: aln.sl@hotmail.com</li>
         <li>Mathaus Silva: mathaus.silva.ramos@gmail.com</li>
-        <li>Thaís Monteiro: Thaisrmo@gmail.com I</li>
+        <li>Thaís Monteiro: Thaisrmo@gmail.com</li>
         <li>Thiago Castro da Cruz: thiagodesignerux@gmail.com</li>
       </ul>
     </Container>
