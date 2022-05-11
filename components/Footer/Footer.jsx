@@ -11,6 +11,7 @@ import {
   JobsWrapper,
   Title,
   Wrapper,
+  MenuWrapper,
 } from "./styles";
 
 const Footer = () => {
@@ -26,7 +27,7 @@ const Footer = () => {
         </StyledButton>
       </Title>
       <ProfileWrapper>
-        <ul>
+        <MenuWrapper>
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -50,7 +51,7 @@ const Footer = () => {
           <li>
             <Link href="/contact">Contato</Link>
           </li>
-        </ul>
+        </MenuWrapper>
         <SocialWrapper>
           <li>
             <SocialAnchor href={linkedinLink} target="_blank" rel="noreferrer">

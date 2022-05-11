@@ -30,6 +30,11 @@ export const Name = styled.h2`
   color: ${(props) => props.theme.colors.secondary.dark};
   font-size: 1.25rem;
   font-family: "Playfair Display";
+
+  ${breakAt("md")} {
+    font-size: 2rem;
+    font-weight: bold;
+  }
 `;
 
 export const StyledButton = styled(Button)`
@@ -51,6 +56,12 @@ export const ProfileWrapper = styled.ul`
   }
 `;
 
+export const MenuWrapper = styled.ul`
+  li {
+    margin-top: 0.5em;
+  }
+`;
+
 export const JobsWrapper = styled.ul`
   margin-left: 1em;
 `;
@@ -61,6 +72,10 @@ export const SocialWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
+  ${breakAt("md")} {
+    font-size: 1.125rem;
+  }
 `;
 
 export const StyledMenu = styled(Menu)`
