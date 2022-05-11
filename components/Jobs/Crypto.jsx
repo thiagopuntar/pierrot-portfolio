@@ -11,7 +11,7 @@ import imgColors from "../../public/img/jobs/crypto/colors.png";
 import imgFont from "../../public/img/jobs/crypto/font.png";
 import imgIcons from "../../public/img/jobs/crypto/icons.png";
 import imgStyleGuide from "../../public/img/jobs/crypto/style-guide.png";
-import { Container } from "../Container";
+import Container from "../Container";
 
 const Crypto = () => {
   return (
