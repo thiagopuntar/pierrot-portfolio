@@ -1,7 +1,8 @@
 import React from "react";
+import Finnis from "../../components/Jobs/Finnis";
 
 const portifolio = () => {
-  return <div>Finnis</div>;
+  return <Finnis />;
 };
 
 export default portifolio;

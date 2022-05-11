@@ -17,11 +17,27 @@ export const H3 = styled.h3`
   margin: 1em 0;
 `;
 
+export const H4 = styled.h4`
+  display: list-item;
+  list-style-position: inside;
+  margin: 1em;
+`;
+
 export const Paragraph = styled.p`
   & li {
     list-style: disc;
-    margin-left: 1.5em;
+    list-style-position: inside;
   }
+
+  & a {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+`;
+
+export const Ol = styled.ol`
+  margin: 1em 0;
+  list-style-position: inside;
 `;
 
 export const StyledImage = styled.div`
