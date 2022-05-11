@@ -1,5 +1,6 @@
 import React, { forwardRef } from "react";
 import styled from "styled-components";
+import { breakAt } from "../constants/breakpoints";
 
 const getBackgroundColor = (props) => {
   const bgs = {
@@ -46,6 +47,11 @@ const StyledButton = styled.button`
 
   &:hover {
     transform: scale(105%);
+  }
+
+  ${breakAt("md")} {
+    font-size: 1.125rem;
+    padding-inline: 0.5em;
   }
 `;
 

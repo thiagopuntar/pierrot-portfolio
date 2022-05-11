@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { breakAt } from "../constants/breakpoints";
 import { theme } from "./theme";
 
 const GlobalStyle = createGlobalStyle`
@@ -9,11 +10,16 @@ const GlobalStyle = createGlobalStyle`
     background-color: inherit;
   }
 
-  html, body {
+  body {
     font-family: "Poppins";
     background-color: ${(props) => props.theme.colors.bg.white};
     box-sizing: border-box;
     color: ${theme.colors.black.z1};
+    font-size: 0.875rem;
+
+    ${breakAt("md")} {
+      font-size: 1.125rem;
+    }
   }
 
   h1 {
@@ -24,6 +30,11 @@ const GlobalStyle = createGlobalStyle`
   h2 {
     font-weight: 400;
     font-size: 0.875rem;
+    line-height: 1.15;
+
+    ${breakAt("md")} {
+      font-size: 1.75rem;
+    }
   }
 
   ul {

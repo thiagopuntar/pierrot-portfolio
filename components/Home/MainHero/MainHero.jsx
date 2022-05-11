@@ -8,7 +8,7 @@ const MainHero = () => (
   <Wrapper>
     <ContentWrapper>
       <Location>
-        <MdLocationOn size={10} />
+        <MdLocationOn className="location__icon" />
         <span>Póvoa de Varzim – Portugal</span>
       </Location>
       <H1>

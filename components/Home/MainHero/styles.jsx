@@ -10,13 +10,23 @@ export const Wrapper = styled.section`
 `;
 
 export const Location = styled.div`
-  margin: 1rem 0;
+  margin: 1em 0;
   display: flex;
   align-items: center;
   gap: 4px;
 
   span {
     font-size: 0.625rem;
+  }
+
+  ${breakAt("md")} {
+    .location__icon {
+      font-size: 1.5rem;
+    }
+
+    span {
+      font-size: 1rem;
+    }
   }
 `;
 
@@ -26,16 +36,24 @@ export const ContentWrapper = styled.div`
 `;
 
 export const H1 = styled.h1`
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 
   & * {
     font-family: "Playfair Display";
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 1.15;
   }
 
   strong {
     color: ${(props) => props.theme.colors.secondary.z4};
+  }
+
+  ${breakAt("md")} {
+    font-size: 3rem;
+
+    strong {
+      font-size: 3.5rem;
+    }
   }
 `;
 

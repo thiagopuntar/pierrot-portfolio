@@ -64,7 +64,7 @@ export const Title = styled.h4`
 
 export const Text = styled.div`
   background-color: inherit;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   margin: 1.5rem 1rem 0 1rem;
 `;
