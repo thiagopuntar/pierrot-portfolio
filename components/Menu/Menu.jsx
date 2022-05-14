@@ -58,7 +58,6 @@ const Menu = () => {
           </SubMenuWrapper>
         </MenuLink>
         <MenuLink name="Sobre Mim" href="/about" />
-        <MenuLink name="Contato" href="/contact" variant="contact" />
       </MenuWrapper>
     </>
   );

@@ -29,9 +29,6 @@ const Footer = () => {
             <li>
               <Link href="/about">Sobre mim</Link>
             </li>
-            <li>
-              <Link href="/contact">Contato</Link>
-            </li>
           </MenuWrapper>
         </Title>
         <div>
