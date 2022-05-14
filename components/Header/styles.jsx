@@ -24,6 +24,7 @@ export const StyledLogo = styled(ResponsiveImage)`
 
 export const LogoWrapper = styled.div`
   position: relative;
+  cursor: pointer;
   width: 32px;
   height: 32px;
 
