@@ -73,7 +73,7 @@ const contactStyle = css`
 export const StyledLink = styled.li`
   & a {
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 
     ${breakUntil("md")} {
       ${({ isActive }) => isActive && activeMobileStyle};
