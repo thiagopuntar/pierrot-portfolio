@@ -7,7 +7,7 @@ import { H2, JobsWrapper, Wrapper } from "./styles";
 const Jobs = () => {
   return (
     <Wrapper>
-      <H2>Trabalhos</H2>
+      <H2 id="works">Trabalhos</H2>
       <JobsWrapper>
         <JobCard
           imageSrc={jobPortfolio}

@@ -1,33 +1,38 @@
 import styled from "styled-components";
 import { breakAt } from "../../constants/breakpoints";
 import Button from "../Button";
-import Menu from "../Menu";
 
 export const Wrapper = styled.footer`
   position: relative;
-  padding: 1.5rem;
+  padding: 1.5em;
+  margin-top: 7em;
   background: ${(props) => props.theme.colors.primary.z5};
-  margin-top: 7.5rem;
-  justify-content: space-around;
-
-  & * {
-    color: ${(props) => props.theme.colors.secondary.z1};
-  }
+  color: ${({ theme }) => theme.colors.white.z2};
 
   ${breakAt("md")} {
-    padding-inline: 10%;
+    padding-inline: 0;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+`;
+
+export const ContentWrapper = styled.div`
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 `;
 
 export const Title = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5em;
 `;
 
-export const Name = styled.h2`
-  color: ${(props) => props.theme.colors.secondary.dark};
+export const Name = styled.h1`
+  color: ${(props) => props.theme.colors.secondary.z1};
   font-size: 1.25rem;
   font-family: "Playfair Display";
 
@@ -37,51 +42,32 @@ export const Name = styled.h2`
   }
 `;
 
-export const StyledButton = styled(Button)`
-  border: 2px solid ${(props) => props.theme.colors.secondary.z1};
-  line-height: 1.5rem;
-  padding-inline: 0.75rem;
-`;
-
-export const ProfileWrapper = styled.ul`
-  display: flex;
-  justify-content: space-between;
-
-  & * {
-    color: ${(props) => props.theme.colors.white.z2};
-  }
-
-  & a {
-    text-decoration: none;
-  }
-`;
-
 export const MenuWrapper = styled.ul`
   li {
     margin-top: 0.5em;
   }
 `;
 
-export const JobsWrapper = styled.ul`
-  margin-left: 1em;
+export const StyledButton = styled(Button)`
+  border: 2px solid ${({ theme }) => theme.colors.secondary.z1};
+  color: ${({ theme }) => theme.colors.secondary.z1};
+  line-height: 1.5rem;
+  padding-inline: 0.75rem;
 `;
 
-export const SocialWrapper = styled.div`
+export const SocialWrapper = styled.ul`
   font-size: 0.875rem;
   line-height: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  margin-top: 1em;
+  width: 65%;
+
+  li {
+    margin-top: 1em;
+  }
 
   ${breakAt("md")} {
     font-size: 1.125rem;
   }
-`;
-
-export const StyledMenu = styled(Menu)`
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
 `;
 
 export const SocialAnchor = styled.a`
@@ -89,5 +75,5 @@ export const SocialAnchor = styled.a`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.5em;
 `;
