@@ -1,7 +1,12 @@
 import Link from "next/link";
 import React from "react";
 import { BsMedium, BsLinkedin, BsDribbble } from "react-icons/bs";
-import { linkedinLink, mediumLink, resume } from "../../constants/links";
+import {
+  dribbbleLink,
+  linkedinLink,
+  mediumLink,
+  resume,
+} from "../../constants/links";
 import {
   Name,
   SocialWrapper,
@@ -56,7 +61,11 @@ const Footer = () => {
               </SocialAnchor>
             </li>
             <li>
-              <SocialAnchor href={mediumLink} target="_blank" rel="noreferrer">
+              <SocialAnchor
+                href={dribbbleLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span>Dribble</span>
                 <BsDribbble />
               </SocialAnchor>
