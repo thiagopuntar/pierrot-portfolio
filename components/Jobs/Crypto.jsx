@@ -23,9 +23,7 @@ const Crypto = () => {
           minhas habilidades com a ferramenta FIgma, desenvolvi fluxo de um
           aplicativo de NFT.
         </H2>
-        <StyledImage>
-          <ResponsiveImage src={imgHero} />
-        </StyledImage>
+        <StyledImage src={imgHero} />
         <H3>O desafio</H3>
         <Paragraph>
           Durante um período de estudo no desenvolvimento e aperfeiçoamento das
@@ -59,42 +57,28 @@ const Crypto = () => {
             </li>
           </ul>
         </Paragraph>
-        <StyledImage>
-          <ResponsiveImage src={imgProject} />
-        </StyledImage>
+        <StyledImage src={imgProject} />
         <H3>Wireframe</H3>
         <Paragraph>
           Primeiro passo do processo foi a criação da ideia e o que iria ser
           desenvolvido no fluxo
         </Paragraph>
-        <StyledImage>
-          <ResponsiveImage src={imgWireframe} />
-        </StyledImage>
+        <StyledImage src={imgWireframe} />
         <H3>Alta fidelidade</H3>
         <Paragraph>
           Primeiro passo do processo foi a criação da ideia e o que iria ser
           desenvolvido no fluxo
         </Paragraph>
-        <StyledImage>
-          <ResponsiveImage src={imgCrypto1} />
-        </StyledImage>
-        <StyledImage>
-          <ResponsiveImage src={imgCrypto2} />
-        </StyledImage>
+        <StyledImage src={imgCrypto1} />
+        <StyledImage src={imgCrypto2} />
         <H3>Style Guide</H3>
         <Paragraph>
           Primeiro passo do processo foi a criação da ideia e o que iria ser
           desenvolvido no fluxo
         </Paragraph>
-        <StyledImage>
-          <ResponsiveImage src={imgStyleGuide} />
-        </StyledImage>
-        <StyledImage>
-          <ResponsiveImage src={imgFont} />
-        </StyledImage>
-        <StyledImage>
-          <ResponsiveImage src={imgColors} />
-        </StyledImage>
+        <StyledImage src={imgStyleGuide} />
+        <StyledImage src={imgFont} />
+        <StyledImage src={imgColors} />
         <Columns>
           <ResponsiveImage src={imgButtons} />
           <ResponsiveImage src={imgIcons} />

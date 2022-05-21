@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { breakAt } from "../../constants/breakpoints";
+import ResponsiveImage from "../ResponsiveImage";
 
 export const H1 = styled.h1`
   text-align: center;
@@ -26,12 +27,13 @@ export const H4 = styled.h4`
 export const Paragraph = styled.p`
   ${({ spaced }) => spaced && "margin: 1em 0;"};
 
-  & li {
+  li {
     list-style: disc;
     list-style-position: inside;
   }
 
-  & a {
+  a {
+    margin-left: 0.25em;
     text-decoration: underline;
     cursor: pointer;
   }
@@ -46,8 +48,22 @@ export const Ol = styled.ol`
   }
 `;
 
-export const StyledImage = styled.div`
+const ImageWrapper = styled.div`
   margin: 4em 0;
+`;
+
+export const StyledImage = ({ src, alt }) => (
+  <ImageWrapper>
+    <ResponsiveImage src={src} alt={alt} />
+  </ImageWrapper>
+);
+
+export const Ul = styled.ul`
+  margin-left: 1em;
+
+  li {
+    margin-bottom: 1em;
+  }
 `;
 
 export const Columns = styled.div`

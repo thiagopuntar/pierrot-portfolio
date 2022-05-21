@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "../Container";
-import ResponsiveImage from "../ResponsiveImage";
 import { H1, H2, H3, H4, Ol, Paragraph, StyledImage } from "./styles";
 import imgCover from "../../public/img/jobs/finni/cover.png";
 import img1 from "../../public/img/jobs/finni/img1.png";
@@ -36,9 +35,7 @@ const Finnis = () => {
         gerenciar suas finanças, compreendendo seus hábitos financeiros e
         atingindo seus objetivos.
       </H2>
-      <StyledImage>
-        <ResponsiveImage src={imgCover} alt="Finni" />
-      </StyledImage>
+      <StyledImage src={imgCover} alt="Finni" />
       <H3>O desafio</H3>
       <Paragraph>
         Em um briefing, um influente acionista de um banco tem uma ideia que
@@ -59,9 +56,7 @@ const Finnis = () => {
         pagamento de contas básicas do dia a dia, para conseguir guardar
         dinheiro ou para o pagamento de contas em atraso.
       </Paragraph>
-      <StyledImage>
-        <ResponsiveImage src={img1} alt="Dinheiro" />
-      </StyledImage>
+      <StyledImage src={img1} alt="Dinheiro" />
       <Paragraph>
         Além disso, a situação financeira pessoal piorou para 45% dos
         entrevistados. O principal motivo seria o não acompanhamento dos
@@ -111,9 +106,7 @@ const Finnis = () => {
         oportunidades de negócio que resolver como suas dores e proporcionar uma
         experiência otimizada.
       </Paragraph>
-      <StyledImage>
-        <ResponsiveImage src={imgPersona} alt="Persona" />
-      </StyledImage>
+      <StyledImage src={imgPersona} alt="Persona" />
       <H3>Thiago Almeida</H3>
       <Paragraph>
         Era uma vez Thiago Almeida, ele tem 28 anos, adora séries de fantasia e
@@ -145,9 +138,7 @@ const Finnis = () => {
         CSD, ferramenta que tem como propósito auxiliar na elaboração de
         projetos, organizando os dados de forma visual.
       </Paragraph>
-      <StyledImage>
-        <ResponsiveImage src={imgMatrizCsd} alt="Matriz CSD" />
-      </StyledImage>
+      <StyledImage src={imgMatrizCsd} alt="Matriz CSD" />
       <Paragraph>
         Em seguida, com o intuito de priorizar o que era mais relevante entender
         sobre o usuário de acordo com o nosso objetivo de pesquisa, distribuímos
@@ -155,24 +146,16 @@ const Finnis = () => {
         desse processo selecionamos como hipóteses e perguntas que fazem parte
         da nossa pesquisa.
       </Paragraph>
-      <StyledImage>
-        <ResponsiveImage src={imgDiagram} alt="Diagrama" />
-      </StyledImage>
+      <StyledImage src={imgDiagram} alt="Diagrama" />
       <H3>Pesquisa quantitativa</H3>
       <Paragraph>
         Nossa pesquisa quantitativa foi elaborada no Google Forms, canalizado em
         grupos no Facebook referente a bancos e no Whatsapp, tendo sido
         respondida por 65 pessoas. Nossos maiores aprendizados foram:
       </Paragraph>
-      <StyledImage>
-        <ResponsiveImage src={imgQuantitativa1} alt="Pesquisa quantitativa 1" />
-      </StyledImage>
-      <StyledImage>
-        <ResponsiveImage src={imgQuantitativa2} alt="Pesquisa quantitativa 2" />
-      </StyledImage>
-      <StyledImage>
-        <ResponsiveImage src={imgQuantitativa3} alt="Pesquisa quantitativa 3" />
-      </StyledImage>
+      <StyledImage src={imgQuantitativa1} alt="Pesquisa quantitativa 1" />
+      <StyledImage src={imgQuantitativa2} alt="Pesquisa quantitativa 2" />
+      <StyledImage src={imgQuantitativa3} alt="Pesquisa quantitativa 3" />
       <Paragraph>
         Em consequência dos dados encontrados, se tornado evidente melhor quais
         como reais dores dos usuários em relação a sua vida financeira, entendre
@@ -186,9 +169,7 @@ const Finnis = () => {
         semi-estruturada com 5 usuários do banco Neon, nossos maiores
         aprendizados foram:
       </Paragraph>
-      <StyledImage>
-        <ResponsiveImage src={imgQualitativa} alt="Pesquisa qualitativa" />
-      </StyledImage>
+      <StyledImage src={imgQualitativa} alt="Pesquisa qualitativa" />
       <H3>Priorização</H3>
       <Paragraph>
         Nesta etapa, utilizamos uma matriz Impacto x Esforço para definir as
@@ -198,31 +179,23 @@ const Finnis = () => {
         métricas. Acreditamos que menor esforço, se refere a implementação mais
         rápida e eficiente para chegar ao MVP em menor tempo.
       </Paragraph>
-      <StyledImage>
-        <ResponsiveImage src={imgPriorizacao} alt="Diagrama de priorização" />
-      </StyledImage>
+      <StyledImage src={imgPriorizacao} alt="Diagrama de priorização" />
       <H3>Ideação</H3>
       <Paragraph>
         Nesta etapa, utilizamos a técnica dos crazy 8&#39;s para estimular a
         equipe na geração de representações possíveis das funcionalidades e
         layout do aplicativo.
       </Paragraph>
-      <StyledImage>
-        <ResponsiveImage src={imgIdeacao} alt="Ideação" />
-      </StyledImage>
+      <StyledImage src={imgIdeacao} alt="Ideação" />
       <H3>Rabiscoframe</H3>
       <Paragraph>
         Após a técnica dos crazy 8&#39;s, compilamos as ideias de layout em um
         rabisco mais completo e que expressasse um norte para a criação de
         nossas telas.
       </Paragraph>
-      <StyledImage>
-        <ResponsiveImage src={imgRabisco} alt="Rabisco Frame" />
-      </StyledImage>
+      <StyledImage src={imgRabisco} alt="Rabisco Frame" />
       <H3>Wireframe</H3>
-      <StyledImage>
-        <ResponsiveImage src={imgWireframe} alt="Wireframe" />
-      </StyledImage>
+      <StyledImage src={imgWireframe} alt="Wireframe" />
       <H3>Teste de usabilidade do Wireframe</H3>
       <Paragraph>
         Realizamos the test through the platform Maze and not were moderados.
@@ -259,9 +232,7 @@ const Finnis = () => {
           action) e algumas informações na interface.
         </li>
       </Ol>
-      <StyledImage>
-        <ResponsiveImage src={imgMapaCalor} alt="Mapa de calor" />
-      </StyledImage>
+      <StyledImage src={imgMapaCalor} alt="Mapa de calor" />
       <H3>Guia de estilos</H3>
       <Paragraph>
         Por ser uma solução atrelada ao Banco Neon, no guia de estilos,
@@ -286,18 +257,14 @@ const Finnis = () => {
         grau de acessibilidade, além de dar mais destaque como informações
         necessárias.
       </Paragraph>
-      <StyledImage>
-        <ResponsiveImage src={imgColors} alt="Cores" />
-      </StyledImage>
+      <StyledImage src={imgColors} alt="Cores" />
       <H4>Tipografia</H4>
       <Paragraph>
         A fonte utilizada foi a Averta, sem serifa e com personalidade simples.
         As aberturas e seus traços de baixo sucesso conseguem expressar um tom
         direto, capaz em uma fonte moderna, neutra e amigável.
       </Paragraph>
-      <StyledImage>
-        <ResponsiveImage src={imgFonts} alt="Tipografia" />
-      </StyledImage>
+      <StyledImage src={imgFonts} alt="Tipografia" />
       <H4>Botões</H4>
       <Paragraph>
         Nos botões, mantivemos os padrões do Neon e percebemos que eles possuiam
@@ -307,9 +274,7 @@ const Finnis = () => {
         sendo bem cuidados para ajudar na parte visual dando contraste para uma
         melhor acessibilidade da ação.
       </Paragraph>
-      <StyledImage>
-        <ResponsiveImage src={imgButtons} alt="Botões" />
-      </StyledImage>
+      <StyledImage src={imgButtons} alt="Botões" />
       <H4>Componentes de formulário</H4>
       <Paragraph>
         Identificamos dois tipos de rótulos utilizados pelo Neon. Um com o campo
@@ -317,25 +282,16 @@ const Finnis = () => {
         Seguindo uma proposta, criamos alguns botões switch durante o
         preenchimento dos formulários.
       </Paragraph>
-      <StyledImage>
-        <ResponsiveImage src={imgForm} alt="Componentes de formulário" />
-      </StyledImage>
+      <StyledImage src={imgForm} alt="Componentes de formulário" />
       <H3>Protótipo de Alta Fidelidade</H3>
-      <StyledImage>
-        <ResponsiveImage
-          src={imgPrototipo}
-          alt="Protótipo de Alta Fidelidade"
-        />
-      </StyledImage>
+      <StyledImage src={imgPrototipo} alt="Protótipo de Alta Fidelidade" />
       <Paragraph>
         <em>
           Ou navegue em nosso protótipo atraves do <a>link.</a>
         </em>
       </Paragraph>
       <H3>Mapa do site</H3>
-      <StyledImage>
-        <ResponsiveImage src={imgMapaSite} alt="Mapa do site" />
-      </StyledImage>
+      <StyledImage src={imgMapaSite} alt="Mapa do site" />
       <H3>Teste de Usabilidade do Protótipo de Alta Fidelidade</H3>
       <Paragraph>
         Após ajustar os problemas identificados com o primeiro teste, realizar
@@ -359,9 +315,7 @@ const Finnis = () => {
           ação.
         </li>
       </Ol>
-      <StyledImage>
-        <ResponsiveImage src={imgUsabilidade} alt="Mapa do site" />
-      </StyledImage>
+      <StyledImage src={imgUsabilidade} alt="Mapa do site" />
       <H3>Próximos passos</H3>
       <Paragraph>
         Após implantado o MVP, deverão ser analisadas as seguintes métricas para
