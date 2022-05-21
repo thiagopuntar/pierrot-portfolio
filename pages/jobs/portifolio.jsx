@@ -1,7 +1,8 @@
 import React from "react";
+import Portfolio from "../../components/Jobs/Portfolio";
 
 const portifolio = () => {
-  return <div>Portfólio</div>;
+  return <Portfolio />;
 };
 
 export default portifolio;
