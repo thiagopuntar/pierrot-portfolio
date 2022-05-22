@@ -234,9 +234,9 @@ const Portfolio = () => {
           elaboração desse trabalho (fotografia, testando prototipo, dando
           feedback e auxiliando no desenvolvimento e criação).
         </Paragraph>
-        <Paragraph>Criador por:</Paragraph>
+        <Paragraph>Criado por:</Paragraph>
         <Paragraph>
-          <strong>Thiago Castro da Cruz:</strong> thiagodesignerux@gmail.com
+          <strong>Thiago Castro da Cruz:</strong> castro.thiagoux@gmail.com
         </Paragraph>
       </Container>
     </main>

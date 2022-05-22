@@ -5,6 +5,7 @@ import { breakAt } from "../../../constants/breakpoints";
 export const Wrapper = styled.section`
   position: relative;
   background-color: transparent;
+  margin-top: 2em;
 `;
 
 export const H2 = styled.h2`

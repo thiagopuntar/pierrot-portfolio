@@ -42,10 +42,10 @@ export const MenuWrapper = styled.ul`
     display: flex;
     flex-direction: row;
     position: relative;
-    justify-content: space-around;
+    justify-content: flex-end;
     top: 0;
     right: 0;
-    gap: 1.25em;
+    gap: 15%;
     background-color: transparent;
     flex: 1 1 100%;
     max-width: 600px;

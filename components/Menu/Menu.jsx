@@ -52,7 +52,7 @@ const Menu = () => {
           onMouseLeave={() => setExpand(false)}
         >
           <SubMenuWrapper isExpanded={isExpanded}>
-            <MenuLink name="Finni$" href="/jobs/finni" />
+            <MenuLink name="Finni$" href="/jobs/finni$" />
             <MenuLink name="Cyber Crypto" href="/jobs/cyberCrypto" />
             <MenuLink name="Portifólio" href="/jobs/portifolio" />
           </SubMenuWrapper>

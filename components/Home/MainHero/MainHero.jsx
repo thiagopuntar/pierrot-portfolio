@@ -2,24 +2,24 @@ import React from "react";
 import ResponsiveImage from "../../ResponsiveImage";
 import { MdLocationOn } from "react-icons/md";
 import imgHero1 from "../../../public/img/img-hero-1.jpg";
-import { Location, ContentWrapper, H1, Wrapper, ImageWrapper } from "./styles";
+import { Location, ContentWrapper, H1, H2, Wrapper, ImageWrapper } from "./styles";
 
 const MainHero = () => (
   <Wrapper>
     <ContentWrapper>
       <Location>
         <MdLocationOn className="location__icon" />
-        <span>Póvoa de Varzim – Portugal</span>
+        <span>Rio de Janeiro - Brasil</span>
       </Location>
       <H1>
         Oi! <br />
         Meu nome é <br />
         <strong>Thiago Castro</strong>
       </H1>
-      <h2>
+      <H2>
         Sou um UX/UI Design luso-brasileiro, em Portugal. Adoro me desafiar,
         aprender e curtir minha família.
-      </h2>
+      </H2>
     </ContentWrapper>
     <ImageWrapper>
       <ResponsiveImage

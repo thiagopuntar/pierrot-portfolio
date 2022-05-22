@@ -12,10 +12,10 @@ const Jobs = () => {
       <JobsWrapper>
         <JobCard
           imageSrc={jobFinish}
-          imageAlt="Finish"
+          imageAlt="Finnis"
           header="Aplicativo Financeiro"
-          title="Neon Finish"
-          href="/jobs/finni"
+          title="Neon Finni$"
+          href="/jobs/finni$"
         >
           Como os correntistas do Banco Neon controlam suas finanças e ao mesmo
           tempo economizam para ter uma melhor qualidade de vida.

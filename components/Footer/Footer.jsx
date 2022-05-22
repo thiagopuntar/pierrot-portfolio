@@ -17,10 +17,12 @@ import {
   Wrapper,
   MenuWrapper,
 } from "./styles";
+import Container from "../Container"
 
 const Footer = () => {
   return (
     <Wrapper>
+      <Container>
       <ContentWrapper>
         <Title>
           <Name>Thiago Castro</Name>
@@ -73,6 +75,7 @@ const Footer = () => {
           </SocialWrapper>
         </div>
       </ContentWrapper>
+      </Container>
     </Wrapper>
   );
 };

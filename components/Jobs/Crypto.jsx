@@ -35,6 +35,43 @@ const Crypto = () => {
           propor um melhor aproveitamento do desafio proposto e conceitos
           aplicados de UX para o bom uso do aplicativo.
         </Paragraph>
+        <H3>Mas o que seria NFT?</H3>
+        <Paragraph>
+          Segundo pesquisas descobri que NFT é: A sigla para o termo non
+          fungible token, ou “token não fungível”. Eles são tokens, ou seja,
+          códigos numéricos com registro de transferência digital que garantem
+          autenticidade aos seus donos. Na prática, eles funcionam como itens
+          colecionáveis, que não podem ser reproduzidos, mas sim transferidos.
+          Diferente das criptomoedas, como o Bitcoin, e vários tokens
+          utilitários, os NFTs não são mutuamente intercambiáveis. O token não
+          fungível representa algo específico e individual, com cartão de
+          &#34;autenticidade&#34; e que não pode ser substituído. Por exemplo,
+          um bitcoin é fungível - troque um por outro bitcoin e você terá
+          exatamente a mesma coisa. Os NFTs são projetados para dar a você algo
+          que não pode ser copiado: propriedade da obra (embora o artista ainda
+          possa reter os direitos autorais e de reprodução da obra física). Essa
+          relação entre dados e valores – realizada pela NFT – é possível por
+          causa de uma tecnologia chamada Blockchain. Esta é uma base de dados
+          descentralizada que ficou famosa por servir de fundamento para as
+          criptomoedas, como a Bitcoin e também a Ethereum. É um sistema onde é
+          possível rastrear o recebimento e envio de determinados tipos de
+          informações. Todas as transações ficam registradas em um tipo de
+          documento oficial que pode ser acessado por qualquer usuário. A
+          maioria dos NFTs faz parte do Blockchain Ethereum. Os NFTs são
+          armazenados em carteiras digitais (embora seja importante notar que a
+          carteira precisa ser especificamente compatível com NFT).
+        </Paragraph>
+        <Paragraph>
+          {" "}
+          fonte:
+          https://mundoconectado.com.br/artigos/v/21538/nft-o-que-e-e-como-funciona-a-tecnologia-que-da-milhoes-de-dolares-por-arte-digital.
+        </Paragraph>
+        <Paragraph>
+          Saiba mais em:
+          https://valor.globo.com/financas/noticia/2021/12/21/o-que-e-nft-como-funciona-essa-tecnologia-posso-criar-um-veja-perguntas-e-respostas.ghtml
+          https://forbes.com.br/forbes-tech/2022/02/afinal-o-que-e-nft-e-como-criar-e-vender/
+          https://www.techtudo.com.br/noticias/2021/03/o-que-e-nft-entenda-como-funciona-a-tecnologia-do-token.ghtml
+        </Paragraph>
         <H3>Objetivo do projeto</H3>
         <Paragraph>
           Tornar o meu portifólio simples e de fácil acesso para qualquer
@@ -84,7 +121,7 @@ const Crypto = () => {
           <ResponsiveImage src={imgIcons} />
         </Columns>
         <H3>Proximos Passos</H3>
-        <Paragraph>
+        <Paragraph spaced>
           Termino esse trabalho, deixando sempre em aberto a modificações, pois
           o portifólio é o “cartão de boas vindas” do seu criador, logo está
           sujeito sempre a modificações e melhoramento, novas experiencias e
@@ -93,6 +130,10 @@ const Crypto = () => {
           aprendizado. Agradeço a todos que participaram, direta e indiretamente
           da elaboração desse trabalho (fotografia, testando prototipo, dando
           feedback e auxiliando no desenvolvimento e criação).
+        </Paragraph>
+        <Paragraph>Criado por:</Paragraph>
+        <Paragraph>
+          <strong>Thiago Castro da Cruz:</strong> castro.thiagoux@gmail.com
         </Paragraph>
       </Container>
     </main>

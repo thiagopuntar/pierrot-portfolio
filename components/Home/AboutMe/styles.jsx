@@ -13,12 +13,12 @@ export const H1 = styled.h1`
 `;
 
 export const Wrapper = styled.section`
-  margin: 2.5rem 0 5rem;
+  margin: 9em 0 5em;
   position: relative;
   background-color: transparent;
 
   ${breakAt("md")} {
-    margin: 7rem 0 5rem;
+    margin: 10em 0;
     display: flex;
     align-items: flex-start;
     gap: 5%;
@@ -27,7 +27,7 @@ export const Wrapper = styled.section`
 
 export const ImageWrapper = styled.div`
   ${breakAt("md")} {
-    width: 70%;
+    width: 50%;
     z-index: 1;
   }
 `;
@@ -37,6 +37,7 @@ export const ContentWrapper = styled.div`
 
   ${breakAt("md")} {
     margin-top: 0;
+    width: 50%;
   }
 `;
 
@@ -50,6 +51,7 @@ export const ButtonWrapper = styled.div`
 
 export const StyledButton = styled(Button)`
   width: 15rem;
+  padding: 0.75em;
 `;
 
 export const Span = styled.span`

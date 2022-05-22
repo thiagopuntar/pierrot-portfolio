@@ -372,7 +372,7 @@ const Finnis = () => {
         <li>Allan Lima: aln.sl@hotmail.com</li>
         <li>Mathaus Silva: mathaus.silva.ramos@gmail.com</li>
         <li>Thaís Monteiro: Thaisrmo@gmail.com</li>
-        <li>Thiago Castro da Cruz: thiagodesignerux@gmail.com</li>
+        <li>Thiago Castro da Cruz: castro.thiagoux@gmail.com</li>
       </ul>
     </Container>
   );

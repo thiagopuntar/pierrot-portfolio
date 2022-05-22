@@ -25,9 +25,6 @@ export const ContentWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
-  ${breakAt("md")} {
-    width: 85%;
-  }
 `;
 
 export const Title = styled.div``;

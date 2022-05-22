@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  margin-top: 5rem;
+  margin-top: 10em;
 `;
 
 export const H2 = styled.h2`

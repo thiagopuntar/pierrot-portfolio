@@ -10,10 +10,12 @@ import {
   ShadowBlurMiddle,
 } from "./styles.jsx";
 import Menu from "../Menu";
+import Container from "../Container"
 
 const Header = () => {
   return (
     <Wrapper>
+    <Container>
       <NavBar>
         <Link href="/" passHref>
           <LogoWrapper>
@@ -22,6 +24,7 @@ const Header = () => {
         </Link>
         <Menu />
       </NavBar>
+      </Container>
       <ShadowBlur />
       <ShadowBlurMiddle />
     </Wrapper>

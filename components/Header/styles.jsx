@@ -8,7 +8,7 @@ export const Wrapper = styled.header`
   overflow-x: clip;
 
   ${breakAt("md")} {
-    padding: 1.5rem 10%;
+    margin-bottom: 6em;
   }
 `;
 
