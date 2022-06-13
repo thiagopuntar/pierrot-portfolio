@@ -2,7 +2,14 @@ import React from "react";
 import ResponsiveImage from "../../ResponsiveImage";
 import { MdLocationOn } from "react-icons/md";
 import imgHero1 from "../../../public/img/img-hero-1.jpg";
-import { Location, ContentWrapper, H1, H2, Wrapper, ImageWrapper } from "./styles";
+import {
+  Location,
+  ContentWrapper,
+  H1,
+  H2,
+  Wrapper,
+  ImageWrapper,
+} from "./styles";
 
 const MainHero = () => (
   <Wrapper>
@@ -17,7 +24,7 @@ const MainHero = () => (
         <strong>Thiago Castro</strong>
       </H1>
       <H2>
-        Sou um UX/UI Design luso-brasileiro, em Portugal. Adoro me desafiar,
+        Sou um UX/UI Design, no Rio de Janeiro, Brasil. Adoro me desafiar,
         aprender e curtir minha família.
       </H2>
     </ContentWrapper>

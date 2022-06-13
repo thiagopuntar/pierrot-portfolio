@@ -26,7 +26,6 @@ export const ImageWrapper = styled.div`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   margin-bottom: 1.3em;
-  line-height: 1.5rem;
 `;
