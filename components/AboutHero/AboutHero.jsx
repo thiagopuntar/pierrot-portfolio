@@ -14,8 +14,8 @@ const AboutHero = () => (
     <TextWrapper>
       <H1>Sobre mim</H1>
       <Paragraph>
-        Sou um UX/UI Design luso-brasileiro, em 2020 decidir mudar de vida,
-        mudar hábitos e migrei de carreira para UX Design.
+        Sou um UX/UI Design, no Rio de Janeiro, Brasil. Adoro me desafiar,
+        aprender e curtir minha família.
       </Paragraph>
     </TextWrapper>
     <ImageWrapper>
