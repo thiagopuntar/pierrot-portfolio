@@ -28,13 +28,13 @@ const AboutMe = () => {
       <ContentWrapper>
         <H1>Um pouco sobre mim</H1>
         <p>
-          No último ano decidi mudar de vida, me mudei para Portugal e migrei de
-          carreira para UX Design.
+          Nos ultimos anos decidi mudar de vida, migrei de carreira para UX
+          Design.
         </p>
         <br />
         <p>
-          Tecnologia e inovação sempre foi uma paixão minha, adoro artes e criar
-          desenhos e imagens. Descobrir no UX uma nova paixão.
+          Tecnologia e inovação sempre foram uma paixão, adoro artes e criar
+          desenhos e imagens. Descobri no UX uma nova paixão.
         </p>
         <Link href="/about" passHref>
           <LinkWrapper>

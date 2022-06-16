@@ -23,11 +23,11 @@ const AboutText = () => (
   <Wrapper>
     <Paragraph>
       Sou apaixonado por conhecer e aprender coisas novas, sou prestativo,
-      proativo e descontraido, em momentos de lazer, gosto de estudar, ler,
-      curtir minha família e amigos, games, board games, séries, filmes fazem
-      parte da minha rotina, adoro assistir e praticar (esporadicamente)
-      esportes, prefiro principalmente os esportes em equipe, gosto de competir
-      e tentar sempre me superar.
+      proativo e descontraído, em momentos de lazer, gosto de estudar, ler,
+      curtir minha família e amigos. Gosto também de games, board games, séries
+      e filmes, adoro assistir e praticar (esporadicamente) esportes, prefiro
+      principalmente os esportes em equipe, gosto de competir e tentar sempre me
+      superar.
     </Paragraph>
     <Paragraph>
       Minha formação começou em História, o que me ajudou a desenvolver vontade
