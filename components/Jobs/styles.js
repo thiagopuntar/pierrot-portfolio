@@ -2,20 +2,22 @@ import styled from "styled-components";
 import { breakAt } from "../../constants/breakpoints";
 import ResponsiveImage from "../ResponsiveImage";
 
-export const H1 = styled.h1`
+export const Title = styled.h1`
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 700;
   margin-bottom: 1em;
 `;
 
-export const H2 = styled.h2`
-  margin-bottom: 3rem;
+export const Subtitle = styled.p`
   text-align: center;
 `;
 
-export const H3 = styled.h3`
+export const SectionTitle = styled.h2`
   font-size: 1.25rem;
-  margin: 1em 0;
+  font-weight: 700;
+  margin: 1.5em 0;
 `;
 
 export const H4 = styled.h4`
@@ -25,7 +27,7 @@ export const H4 = styled.h4`
 `;
 
 export const Paragraph = styled.p`
-  ${({ spaced }) => spaced && "margin: 1em 0;"};
+  margin-bottom: 1.5em;
 
   li {
     list-style: disc;
@@ -49,7 +51,7 @@ export const Ol = styled.ol`
 `;
 
 const ImageWrapper = styled.div`
-  margin: 4em 0;
+  margin: 48px 0;
 `;
 
 export const StyledImage = ({ src, alt }) => (

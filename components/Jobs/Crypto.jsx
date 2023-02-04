@@ -1,6 +1,14 @@
 import React from "react";
 import ResponsiveImage from "../ResponsiveImage";
-import { Columns, H1, H2, H3, Ul, Paragraph, StyledImage } from "./styles";
+import {
+  Columns,
+  Title,
+  Subtitle,
+  SectionTitle,
+  Ul,
+  Paragraph,
+  StyledImage,
+} from "./styles";
 import imgHero from "../../public/img/jobs/crypto/hero.png";
 import imgProject from "../../public/img/jobs/crypto/project.png";
 import imgWireframe from "../../public/img/jobs/crypto/wireframe.png";
@@ -17,14 +25,14 @@ const Crypto = () => {
   return (
     <main>
       <Container>
-        <H1>Cyber Crypto: Criação de aplicativo de NFT</H1>
-        <H2>
+        <Title>Cyber Crypto: Criação de aplicativo de NFT</Title>
+        <Subtitle>
           Durante um período de estudo no desenvolvimento e aperfeiçoamento das
           minhas habilidades com a ferramenta FIgma, desenvolvi fluxo de um
           aplicativo de NFT.
-        </H2>
+        </Subtitle>
         <StyledImage src={imgHero} />
-        <H3>O desafio</H3>
+        <SectionTitle>O desafio</SectionTitle>
         <Paragraph>
           Durante um período de estudo no desenvolvimento e aperfeiçoamento das
           minhas habilidades com a ferramenta FIgma, desenvolvi fluxo de um
@@ -35,7 +43,7 @@ const Crypto = () => {
           propor um melhor aproveitamento do desafio proposto e conceitos
           aplicados de UX para o bom uso do aplicativo.
         </Paragraph>
-        <H3>Mas o que seria NFT?</H3>
+        <SectionTitle>Mas o que seria NFT?</SectionTitle>
         <Paragraph>Segundo pesquisas descobri que NFT é:</Paragraph>
         <Paragraph>
           A sigla para o termo non fungible token, ou “token não fungível”. Eles
@@ -64,7 +72,7 @@ const Crypto = () => {
           (embora seja importante notar que a carteira precisa ser
           especificamente compatível com NFT).
         </Paragraph>
-        <Paragraph spaced>
+        <Paragraph>
           fonte:
           <a
             target="_blank"
@@ -74,7 +82,7 @@ const Crypto = () => {
             https://mundoconectado.com.br/artigos/v/21538/nft-o-que-e-e-como-funciona-a-tecnologia-que-da-milhoes-de-dolares-por-arte-digital.
           </a>
         </Paragraph>
-        <Paragraph spaced>Saiba mais em:</Paragraph>
+        <Paragraph>Saiba mais em:</Paragraph>
         <Ul>
           <li>
             <a
@@ -105,13 +113,13 @@ const Crypto = () => {
           </li>
         </Ul>
 
-        <H3>Objetivo do projeto</H3>
+        <SectionTitle>Objetivo do projeto</SectionTitle>
         <Paragraph>
           Tornar o meu portifólio simples e de fácil acesso para qualquer
           usuário que visite, que todos consigam extrair e encontrar o que
           procuram em navegando por ele.
         </Paragraph>
-        <H3>Usuários</H3>
+        <SectionTitle>Usuários</SectionTitle>
         <Paragraph>
           Analisando o perfil de um grupo de usuários, usuários de NFT, tendo
           uma conversa mais livre, sem roteiro e mais informal, observei que
@@ -128,20 +136,20 @@ const Crypto = () => {
           </ul>
         </Paragraph>
         <StyledImage src={imgProject} />
-        <H3>Wireframe</H3>
+        <SectionTitle>Wireframe</SectionTitle>
         <Paragraph>
           Primeiro passo do processo foi a criação da ideia e o que iria ser
           desenvolvido no fluxo
         </Paragraph>
         <StyledImage src={imgWireframe} />
-        <H3>Alta fidelidade</H3>
+        <SectionTitle>Alta fidelidade</SectionTitle>
         <Paragraph>
           Primeiro passo do processo foi a criação da ideia e o que iria ser
           desenvolvido no fluxo
         </Paragraph>
         <StyledImage src={imgCrypto1} />
         <StyledImage src={imgCrypto2} />
-        <H3>Style Guide</H3>
+        <SectionTitle>Style Guide</SectionTitle>
         <Paragraph>
           Primeiro passo do processo foi a criação da ideia e o que iria ser
           desenvolvido no fluxo
@@ -153,8 +161,8 @@ const Crypto = () => {
           <ResponsiveImage src={imgButtons} />
           <ResponsiveImage src={imgIcons} />
         </Columns>
-        <H3>Proximos Passos</H3>
-        <Paragraph spaced>
+        <SectionTitle>Proximos Passos</SectionTitle>
+        <Paragraph>
           Termino esse trabalho, deixando sempre em aberto a modificações, pois
           o portifólio é o “cartão de boas vindas” do seu criador, logo está
           sujeito sempre a modificações e melhoramento, novas experiencias e

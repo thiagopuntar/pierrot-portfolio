@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 import { breakAt } from "../constants/breakpoints";
-import { theme } from "./theme";
 
 const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
@@ -14,8 +13,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Poppins";
     background-color: ${(props) => props.theme.colors.bg.white};
     box-sizing: border-box;
-    color: ${theme.colors.black.z1};
+    color: ${({ theme }) => theme.colors.black.z1};
     font-size: 0.875rem;
+    line-height: 1.5;
 
     ${breakAt("md")} {
       font-size: 1.125rem;

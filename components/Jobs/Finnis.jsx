@@ -1,6 +1,14 @@
 import React from "react";
 import Container from "../Container";
-import { H1, H2, H3, H4, Ol, Paragraph, StyledImage } from "./styles";
+import {
+  Title,
+  Subtitle,
+  SectionTitle,
+  H4,
+  Ol,
+  Paragraph,
+  StyledImage,
+} from "./styles";
 import imgCover from "../../public/img/jobs/finni/cover.png";
 import img1 from "../../public/img/jobs/finni/img1.png";
 import imgPersona from "../../public/img/jobs/finni/persona.png";
@@ -26,28 +34,28 @@ import imgWireframe from "../../public/img/jobs/finni/wireframe.png";
 const Finnis = () => {
   return (
     <Container>
-      <H1>
+      <Title>
         FINNI$: Ajudando correntistas do banco Neon a alcançar seus objetivos
         através da gestão financeira
-      </H1>
-      <H2>
+      </Title>
+      <Subtitle>
         Como utilizamos UX Design para ajudar os correntistas do Banco Neon a
         gerenciar suas finanças, compreendendo seus hábitos financeiros e
         atingindo seus objetivos.
-      </H2>
+      </Subtitle>
       <StyledImage src={imgCover} alt="Finni" />
-      <H3>O desafio</H3>
+      <SectionTitle>O desafio</SectionTitle>
       <Paragraph>
         Em um briefing, um influente acionista de um banco tem uma ideia que
         considera interessante: criar um aplicativo integrado a um banco que
         ajudará os correntistas a economizar de acordo com seus hábitos
-        financeiros . Funcionaria da seguinte forma: De acordo com os requisitos
+        financeiros. Funcionaria da seguinte forma: De acordo com os requisitos
         frequentados pelo usuário o aplicativo recomendaria local similar, de
         menor valor mas com avaliação similar. Contudo, ao anuma lisar dores dos
         usuários percebemos que para solucionar a questão de forma mais
         adequada, deveríamos focar em outro aspecto : Uma motivação.
       </Paragraph>
-      <H3>O cenário atual</H3>
+      <SectionTitle>O cenário atual</SectionTitle>
       <Paragraph>
         Em um contexto de pandemia do covid-19 como ações adotadas na tentativa
         de conter a propagação do vírus tiveram grandes impactos na economia
@@ -66,7 +74,7 @@ const Finnis = () => {
         calçado e vestuário, refeições delivery e fora de casa, idas a bares e
         casas noturnas.
       </Paragraph>
-      <Paragraph spaced>
+      <Paragraph>
         <strong>
           Com relação aos projetos para 2020 que envolviam planejamento
           financeiro. Os mais citados foram o pagamento de dívidas atrasadas, a
@@ -82,7 +90,7 @@ const Finnis = () => {
         vantagens, o banco encontra dificuldades com o engajamento dos clientes,
         por não serem automatizadas e unificadas.
       </Paragraph>
-      <H3>Objetivo do projeto</H3>
+      <SectionTitle>Objetivo do projeto</SectionTitle>
       <Paragraph>
         Espera a falta de disciplina no gerenciamento financeiro, os
         correntistas não conseguem guardar dinheiro para suas realizações
@@ -94,8 +102,8 @@ const Finnis = () => {
         15% dos correntistas do Banco Neon, a entrarem no grupo de pessoas que
         poupam no mínimo 10% de seus salários, sem período de um ano.
       </Paragraph>
-      <H3>Usuários</H3>
-      <Paragraph spaced>
+      <SectionTitle>Usuários</SectionTitle>
+      <Paragraph>
         <em>Perfil dos usuários</em>
       </Paragraph>
       <Paragraph>
@@ -107,7 +115,7 @@ const Finnis = () => {
         experiência otimizada.
       </Paragraph>
       <StyledImage src={imgPersona} alt="Persona" />
-      <H3>Thiago Almeida</H3>
+      <SectionTitle>Thiago Almeida</SectionTitle>
       <Paragraph>
         Era uma vez Thiago Almeida, ele tem 28 anos, adora séries de fantasia e
         não dispensa se reunir com os amigos para jogar RPG. <br />
@@ -130,7 +138,7 @@ const Finnis = () => {
         postura financeira e já conseguiu guardar 60% do total que precisa para
         realizar sua viagem.
       </Paragraph>
-      <H3>Primeira etapa de validação</H3>
+      <SectionTitle>Primeira etapa de validação</SectionTitle>
       <Paragraph>
         Nesta etapa, em conjunto, registramos tudo que já tínhamos certeza,
         nossas suposições, e as dúvidas que gostaríamos de sanar acerca dos
@@ -147,7 +155,7 @@ const Finnis = () => {
         da nossa pesquisa.
       </Paragraph>
       <StyledImage src={imgDiagram} alt="Diagrama" />
-      <H3>Pesquisa quantitativa</H3>
+      <SectionTitle>Pesquisa quantitativa</SectionTitle>
       <Paragraph>
         Nossa pesquisa quantitativa foi elaborada no Google Forms, canalizado em
         grupos no Facebook referente a bancos e no Whatsapp, tendo sido
@@ -163,14 +171,14 @@ const Finnis = () => {
         e quais dificuldades enfrentam ao tentar alcançar um objetivo
         financeiro.
       </Paragraph>
-      <H3>Pesquisa qualitativa</H3>
+      <SectionTitle>Pesquisa qualitativa</SectionTitle>
       <Paragraph>
         Para entender melhor os pontos elencados acima realizamos uma pesquisa
         semi-estruturada com 5 usuários do banco Neon, nossos maiores
         aprendizados foram:
       </Paragraph>
       <StyledImage src={imgQualitativa} alt="Pesquisa qualitativa" />
-      <H3>Priorização</H3>
+      <SectionTitle>Priorização</SectionTitle>
       <Paragraph>
         Nesta etapa, utilizamos uma matriz Impacto x Esforço para definir as
         soluções desenvolvidas imediatamente, buscando o maior impacto com o
@@ -180,23 +188,23 @@ const Finnis = () => {
         rápida e eficiente para chegar ao MVP em menor tempo.
       </Paragraph>
       <StyledImage src={imgPriorizacao} alt="Diagrama de priorização" />
-      <H3>Ideação</H3>
+      <SectionTitle>Ideação</SectionTitle>
       <Paragraph>
         Nesta etapa, utilizamos a técnica dos crazy 8&#39;s para estimular a
         equipe na geração de representações possíveis das funcionalidades e
         layout do aplicativo.
       </Paragraph>
       <StyledImage src={imgIdeacao} alt="Ideação" />
-      <H3>Rabiscoframe</H3>
+      <SectionTitle>Rabiscoframe</SectionTitle>
       <Paragraph>
         Após a técnica dos crazy 8&#39;s, compilamos as ideias de layout em um
         rabisco mais completo e que expressasse um norte para a criação de
         nossas telas.
       </Paragraph>
       <StyledImage src={imgRabisco} alt="Rabisco Frame" />
-      <H3>Wireframe</H3>
+      <SectionTitle>Wireframe</SectionTitle>
       <StyledImage src={imgWireframe} alt="Wireframe" />
-      <H3>Teste de usabilidade do Wireframe</H3>
+      <SectionTitle>Teste de usabilidade do Wireframe</SectionTitle>
       <Paragraph>
         Realizamos the test through the platform Maze and not were moderados.
         Nosso objetivo foi identificar o fluxo de usuário no aplicativo e
@@ -233,7 +241,7 @@ const Finnis = () => {
         </li>
       </Ol>
       <StyledImage src={imgMapaCalor} alt="Mapa de calor" />
-      <H3>Guia de estilos</H3>
+      <SectionTitle>Guia de estilos</SectionTitle>
       <Paragraph>
         Por ser uma solução atrelada ao Banco Neon, no guia de estilos,
         procuramos ser o mais fiel possível ao padrão usado pela empresa. Porém,
@@ -283,23 +291,25 @@ const Finnis = () => {
         preenchimento dos formulários.
       </Paragraph>
       <StyledImage src={imgForm} alt="Componentes de formulário" />
-      <H3>Protótipo de Alta Fidelidade</H3>
+      <SectionTitle>Protótipo de Alta Fidelidade</SectionTitle>
       <StyledImage src={imgPrototipo} alt="Protótipo de Alta Fidelidade" />
       <Paragraph>
         <em>
           Ou navegue em nosso protótipo atraves do <a>link.</a>
         </em>
       </Paragraph>
-      <H3>Mapa do site</H3>
+      <SectionTitle>Mapa do site</SectionTitle>
       <StyledImage src={imgMapaSite} alt="Mapa do site" />
-      <H3>Teste de Usabilidade do Protótipo de Alta Fidelidade</H3>
+      <SectionTitle>
+        Teste de Usabilidade do Protótipo de Alta Fidelidade
+      </SectionTitle>
       <Paragraph>
         Após ajustar os problemas identificados com o primeiro teste, realizar
         uma nova rodada de testes, dessa vez, já com o protótipo mais fiel à
         realidade da solução buscada. O novo teste foi realizado também na
         plataforma Maze com 18 usuários. Alguns testículos foram moderados.
       </Paragraph>
-      <Paragraph spaced>Nossos principais aprendizados foram:</Paragraph>
+      <Paragraph>Nossos principais aprendizados foram:</Paragraph>
       <Ol>
         <li>
           Ao mudar o estilo do botão e o texto, aumentamos a taxa de sucesso o
@@ -316,7 +326,7 @@ const Finnis = () => {
         </li>
       </Ol>
       <StyledImage src={imgUsabilidade} alt="Mapa do site" />
-      <H3>Próximos passos</H3>
+      <SectionTitle>Próximos passos</SectionTitle>
       <Paragraph>
         Após implantado o MVP, deverão ser analisadas as seguintes métricas para
         avaliar o desempenho do aplicativo:
@@ -337,7 +347,7 @@ const Finnis = () => {
           </li>
         </ul>
       </Paragraph>
-      <H3>Conclusão e aprendizados</H3>
+      <SectionTitle>Conclusão e aprendizados</SectionTitle>
       <Paragraph>
         Durante a elaboração deste case nosso maior aprendizado foi sem dúvidas
         a importância da etapa de pesquisa. Durante essa etapa muitas das nossas
@@ -345,7 +355,7 @@ const Finnis = () => {
         reformulada. Sem a pesquisa, provavelmente estaríamos investindo os
         nossos esforços e tempo em um projeto fadado ao fracasso.
       </Paragraph>
-      <Paragraph spaced>
+      <Paragraph>
         Após avaliação e mapeamento de todas as necessidades e dores dos
         usuários, decidimos optar primordialmente por uma solução em que
         controlasse e informasse os ganhos e gastos do usuário assim como um
@@ -353,7 +363,7 @@ const Finnis = () => {
         para futuras metas/sonhos, como por exemplo executar uma viagem ou
         comprar um celular novo…
       </Paragraph>
-      <Paragraph spaced>
+      <Paragraph>
         Pretendemos no futuro acrescentar algumas oportunidades encontradas
         durante o mapeamento da jornada, e não priorizadas na matriz esforço x
         impacto, como:
@@ -366,7 +376,7 @@ const Finnis = () => {
           <li>Indicação de investimentos.</li>
         </ul>
       </Paragraph>
-      <H3>Obrigado por ler até aqui!</H3>
+      <SectionTitle>Obrigado por ler até aqui!</SectionTitle>
       <Paragraph>Equipe:</Paragraph>
       <ul>
         <li>Allan Lima: aln.sl@hotmail.com</li>

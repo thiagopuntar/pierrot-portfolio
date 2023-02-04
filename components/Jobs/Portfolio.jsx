@@ -1,5 +1,14 @@
 import React from "react";
-import { Columns, Ul, Ol, H1, H2, H3, Paragraph, StyledImage } from "./styles";
+import {
+  Columns,
+  Ul,
+  Ol,
+  Title,
+  Subtitle,
+  SectionTitle,
+  Paragraph,
+  StyledImage,
+} from "./styles";
 import imgButtons from "../../public/img/jobs/portfolio/buttons.png";
 import imgColors from "../../public/img/jobs/portfolio/colors.png";
 import imgHome from "../../public/img/jobs/portfolio/home.png";
@@ -16,14 +25,16 @@ const Portfolio = () => {
   return (
     <main>
       <Container>
-        <H1>Portifólio em UI/UX Designer: Desenvolvimento do portifólio</H1>
-        <H2>
+        <Title>
+          Portifólio em UI/UX Designer: Desenvolvimento do portifólio
+        </Title>
+        <Subtitle>
           Como utilizei tecnicas e metodos de UX Design para criar e validar o
           meu portifólio, transformando em um trabalho real todo o processo de
           desenvolvimento
-        </H2>
+        </Subtitle>
         <StyledImage src={imgHome} alt="Imagem do portifólio" />
-        <H3>O desafio</H3>
+        <SectionTitle>O desafio</SectionTitle>
         <Paragraph>
           O desafio Desenvolvendo meu portifólio me deparei com algumas dúvidas
           e caminhos a serem tomados, então decidi transformar todo meu processo
@@ -35,7 +46,7 @@ const Portfolio = () => {
           experiências práticas, além de expressar um pouco sobre quem é você, o
           designer que elaborou aquele trabalho.
         </Paragraph>
-        <Paragraph spaced>
+        <Paragraph>
           Portanto, desde o momento em que me vi na possibilidade de criar um
           ambiente, no qual iria expor meus trabalhos e como seria a construção
           estrutural desses trabalhos, o famoso “pensamento em design” Decidi
@@ -48,13 +59,13 @@ const Portfolio = () => {
           usuário do meu portifólio possa navegar por ele sem problemas e
           entendendo e encontrando o que ele quer.
         </Paragraph>
-        <H3>Objetivo do projeto</H3>
+        <SectionTitle>Objetivo do projeto</SectionTitle>
         <Paragraph>
           Tornar o meu portifólio simples e de fácil acesso para qualquer
           usuário que visite, que todos consigam extrair e encontrar o que
           procuram em navegando por ele.
         </Paragraph>
-        <H3>Usuários</H3>
+        <SectionTitle>Usuários</SectionTitle>
         <Paragraph>
           Analisando o perfil de um grupo específico de usuários, principalmente
           recrutadores (desk research), através de artigos e vídeos, coletei
@@ -71,7 +82,7 @@ const Portfolio = () => {
         </Paragraph>
         <StyledImage src={imgJornada} alt="Jornada" />
         <StyledImage src={imgPersona} alt="Persona" />
-        <H3>Rabiscoframe e Wireframe</H3>
+        <SectionTitle>Rabiscoframe e Wireframe</SectionTitle>
         <Paragraph>
           Realizei testes de navegação e usabilidade com algumas pessoas (6
           usuários), de idades e conhecimentos diferentes, utilizando o meu
@@ -104,10 +115,10 @@ const Portfolio = () => {
             sempre voltar para a Home, independente de onde estiverem no site;
           </li>
         </Ol>
-        <Paragraph spaced>
+        <Paragraph>
           Com esse teste, obtive os seguintes pontos de maior relevância:
         </Paragraph>
-        <Paragraph spaced>
+        <Paragraph>
           <Ul>
             <li>
               Na tela de home a minha logo deveria levar o usuário para a pagina
@@ -147,9 +158,9 @@ const Portfolio = () => {
             aqui
           </a>
         </Paragraph>
-        <H3>Style Guide</H3>
+        <SectionTitle>Style Guide</SectionTitle>
         <StyledImage src={imgStyleguide} alt="Style Guide" />
-        <H3>Cores</H3>
+        <SectionTitle>Cores</SectionTitle>
         <Paragraph>
           A escolha das cores foi uma mistura de vontade pessoal, com tendências
           por um background mais clean, que chamasse mais atenção para as
@@ -158,7 +169,7 @@ const Portfolio = () => {
           chamasse a atenção para as mensagem principais da página.
         </Paragraph>
         <StyledImage src={imgColors} alt="Cores" />
-        <H3>Tipografia</H3>
+        <SectionTitle>Tipografia</SectionTitle>
         <Paragraph>
           A escolha da tipografia, foi para trazer um tom e uma mensagem mais
           parecida com minha personalidade, algo mais divertido e descontraido,
@@ -174,7 +185,7 @@ const Portfolio = () => {
           tomadas, buscando manter uma hierarquia visual bem definida.
         </Paragraph>
         <StyledImage src={imgTypography} alt="Tipografia" />
-        <H3>Botões</H3>
+        <SectionTitle>Botões</SectionTitle>
         <Paragraph>
           Os botões foram escolhidos dentro da tonalidade das cores propostas
           para a página, roxo e amarelo. Aumentando a intensidade e os
@@ -184,8 +195,8 @@ const Portfolio = () => {
           que clicar, para encontrar o que procura.
         </Paragraph>
         <StyledImage src={imgButtons} alt="Botões" />
-        <H3>Conclusão</H3>
-        <Paragraph spaced>
+        <SectionTitle>Conclusão</SectionTitle>
+        <Paragraph>
           Concluindo a criação e elaboração do projeto, tive muitos caminhos a
           seguir e, com o auxílio dos testes de navagação realizados, as tomadas
           de decisão foram facilitadas. Facilitando a tomada de decisão e que
@@ -220,8 +231,8 @@ const Portfolio = () => {
             </li>
           </Ul>
         </Paragraph>
-        <H3>Proximos Passos</H3>
-        <Paragraph spaced>
+        <SectionTitle>Proximos Passos</SectionTitle>
+        <Paragraph>
           Termino esse trabalho, deixando sempre em aberto a modificações, pois
           o portifólio é o “cartão de boas vindas” do seu criador, logo está
           sujeito sempre a modificações e melhoramento, novas experiencias e
@@ -229,7 +240,7 @@ const Portfolio = () => {
           coisas novas e o portifolio participa integralmente dessa mudança e
           aprendizado.
         </Paragraph>
-        <Paragraph spaced>
+        <Paragraph>
           Agradeço a todos que participaram, direta e indiretamente da
           elaboração desse trabalho (fotografia, testando prototipo, dando
           feedback e auxiliando no desenvolvimento e criação).
