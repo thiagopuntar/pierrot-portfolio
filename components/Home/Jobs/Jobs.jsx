@@ -25,7 +25,7 @@ const Jobs = () => {
           imageAlt="Coletânea"
           header="Processo de Trabalho"
           title="Coletânea de trabalhos"
-          href="/jobs/portifolio"
+          href="/jobs/collection"
           align="right"
         >
           Como era a metodologia de trabalho e meu processo de design nos
