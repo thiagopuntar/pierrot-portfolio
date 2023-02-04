@@ -12,7 +12,8 @@ import {
 
 const MenuItem = ({ href, name, children, variant }) => {
   const router = useRouter();
-  const isActive = router.asPath === href;
+  const isOnJob = router.asPath.includes("jobs") && href === "/jobs";
+  const isActive = router.asPath === href || isOnJob;
 
   const ComponentWrapper =
     variant === "submenu" ? SubmenuItemWrapper : MenuItemWrapper;
@@ -40,7 +41,7 @@ const Menu = () => {
       <HamburguerButton onClick={() => setOpen(!isOpen)} />
       <MenuWrapper isOpen={isOpen} onClick={() => setOpen(false)}>
         <MenuItem name="Home" href="/" />
-        <MenuItem>
+        <MenuItem href="/jobs">
           <span>Trabalhos</span>
           <SubMenuWrapper>
             <SubMenu>
