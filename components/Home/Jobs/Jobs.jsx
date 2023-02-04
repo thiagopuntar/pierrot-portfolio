@@ -1,7 +1,7 @@
 import React from "react";
 import JobCard from "./JobCard";
 import jobFinish from "../../../public/img/job-finish.png";
-import jobPortfolio from "../../../public/img/job-portfolio.png";
+import jobCollection from "../../../public/img/job-collection.png";
 import jobCrypto from "../../../public/img/job-crypto.png";
 import { H2, JobsWrapper, Wrapper } from "./styles";
 
@@ -21,20 +21,20 @@ const Jobs = () => {
           tempo economizam para ter uma melhor qualidade de vida.
         </JobCard>
         <JobCard
-          imageSrc={jobPortfolio}
-          imageAlt="Portifólio"
-          header="Criação do Portifólio"
-          title="Portifólio"
+          imageSrc={jobCollection}
+          imageAlt="Coletânea"
+          header="Processo de Trabalho"
+          title="Coletânea de trabalhos"
           href="/jobs/portifolio"
           align="right"
         >
-          Como foi pensado e estruturado o desenvolvimento desse portifólio.
-          Utilizando ferramentas e técnicas de UX.
+          Como era a metodologia de trabalho e meu processo de design nos
+          projetos na minha primeira experiencia com UX/UI Design.
         </JobCard>
 
         <JobCard
           imageSrc={jobCrypto}
-          imageAlt="Portifólio"
+          imageAlt="Krypton"
           header="Aplicativo de NFT"
           title="Cyber Crypto"
           href="/jobs/cyberCrypto"
