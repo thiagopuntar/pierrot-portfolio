@@ -233,7 +233,8 @@ const Collection = () => {
           responderei com maior prazer.
         </Paragraph>
         <Paragraph>
-          <div>Criado por:</div>
+          <span>Criado por:</span>
+          <br />
           <strong>Thiago Castro da Cruz:</strong> castro.thiagoux@gmail.com |
           LinkedIn
         </Paragraph>
