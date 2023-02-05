@@ -2,43 +2,12 @@ import React, { forwardRef } from "react";
 import styled from "styled-components";
 import { breakAt } from "../constants/breakpoints";
 
-const getBackgroundColor = (props) => {
-  const bgs = {
-    outlined: "inherit",
-    primary: props.theme.colors.primary.z1,
-    secondary: props.theme.colors.secondary.z1,
-  };
-
-  return bgs[props.variant] || bgs.primary;
-};
-
-const getTextColor = (props) => {
-  const colors = {
-    primary: props.theme.colors.secondary.z1,
-    outlined: props.theme.colors.primary.z4,
-    secondary: props.theme.colors.primary.z1,
-  };
-
-  return colors[props.variant] || colors.primary;
-};
-
-const getBorder = (props) => {
-  const colors = {
-    outlined: props.theme.colors.primary.z4,
-  };
-
-  const color = colors[props.variant];
-  if (!color) return 0;
-
-  return `2px solid ${color}`;
-};
-
-const StyledButton = styled.button`
+const BaseButton = styled.button`
   border-radius: 24px;
   padding: 0.5rem 0;
-  border: ${getBorder};
-  background-color: ${getBackgroundColor};
-  color: ${getTextColor};
+  border: none;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-weight: 600;
   transition: 0.2s ease-out;
   line-height: 1.5rem;
@@ -51,15 +20,45 @@ const StyledButton = styled.button`
 
   ${breakAt("md")} {
     font-size: 1.125rem;
-    padding-inline: 0.5em;
+    padding-inline: 0.75em;
   }
 `;
 
-const Button = ({ children, className, variant, ...props }, ref) => {
+const OutlinedButton = styled(BaseButton)`
+  border: 2px solid var(--text-color);
+  background-color: transparent;
+`;
+
+const NormalButton = styled(BaseButton)``;
+
+const colors = {
+  primary: {
+    "--text-color": "var(--primary-1)",
+    "--bg-color": "var(--secondary-1)",
+  },
+  secondary: {
+    "--text-color": "var(--secondary-1)",
+    "--bg-color": "var(--primary-1)",
+  },
+};
+
+const variants = {
+  normal: NormalButton,
+  outlined: OutlinedButton,
+};
+
+const Button = ({ children, color, variant = "normal", ...props }, ref) => {
+  const style = colors[color];
+  if (!style) {
+    throw new Error("Color not informed!");
+  }
+
+  const ButtonComponent = variants[variant];
+
   return (
-    <StyledButton ref={ref} className={className} variant={variant} {...props}>
+    <ButtonComponent style={style} ref={ref} {...props}>
       {children}
-    </StyledButton>
+    </ButtonComponent>
   );
 };
 

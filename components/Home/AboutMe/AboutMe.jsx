@@ -43,11 +43,15 @@ const AboutMe = () => {
           </LinkWrapper>
         </Link>
         <ButtonWrapper>
-          <StyledButton onClick={() => window.open(resume, "_blank")}>
+          <StyledButton
+            color="secondary"
+            onClick={() => window.open(resume, "_blank")}
+          >
             Baixe o meu currículo
           </StyledButton>
           <StyledButton
             variant="outlined"
+            color="primary"
             onClick={() => window.open(linkedinLink, "_blank")}
           >
             Conecte-se no Linkedin

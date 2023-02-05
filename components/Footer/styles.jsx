@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { breakAt } from "../../constants/breakpoints";
-import Button from "../Button";
 
 export const Wrapper = styled.footer`
   position: relative;
@@ -24,7 +23,6 @@ export const ContentWrapper = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-
 `;
 
 export const Title = styled.div``;
@@ -47,11 +45,10 @@ export const MenuWrapper = styled.ul`
   }
 `;
 
-export const StyledButton = styled(Button)`
-  border: 2px solid ${({ theme }) => theme.colors.secondary.z1};
-  color: ${({ theme }) => theme.colors.secondary.z1};
-  line-height: 1.5rem;
-  padding-inline: 0.75rem;
+export const RightColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 `;
 
 export const SocialWrapper = styled.ul`

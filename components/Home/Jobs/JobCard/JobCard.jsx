@@ -31,7 +31,7 @@ const JobCard = ({
         <Title>{title}</Title>
         <Text>{children}</Text>
         <Link href={href} passHref>
-          <StyledButton variant="secondary">Veja o Trabalho</StyledButton>
+          <StyledButton color="primary">Veja o Trabalho</StyledButton>
         </Link>
       </ContentWrapper>
     </Wrapper>

@@ -11,27 +11,26 @@ const Jobs = () => {
       <H2 id="works">Trabalhos</H2>
       <JobsWrapper>
         <JobCard
-          imageSrc={jobFinish}
-          imageAlt="Finnis"
-          header="Aplicativo Financeiro"
-          title="Neon Finni$"
-          href="/jobs/finni$"
-        >
-          Como os correntistas do Banco Neon controlam suas finanças e ao mesmo
-          tempo economizam para ter uma melhor qualidade de vida.
-        </JobCard>
-        <JobCard
           imageSrc={jobCollection}
           imageAlt="Coletânea"
           header="Processo de Trabalho"
           title="Coletânea de trabalhos"
           href="/jobs/collection"
-          align="right"
         >
           Como era a metodologia de trabalho e meu processo de design nos
           projetos na minha primeira experiencia com UX/UI Design.
         </JobCard>
-
+        <JobCard
+          imageSrc={jobFinish}
+          imageAlt="Finnis"
+          header="Aplicativo Financeiro"
+          title="Neon Finni$"
+          href="/jobs/finni$"
+          align="right"
+        >
+          Como os correntistas do Banco Neon controlam suas finanças e ao mesmo
+          tempo economizam para ter uma melhor qualidade de vida.
+        </JobCard>
         <JobCard
           imageSrc={jobCrypto}
           imageAlt="Krypton"
