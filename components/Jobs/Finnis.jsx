@@ -330,23 +330,21 @@ const Finnis = () => {
       <Paragraph>
         Após implantado o MVP, deverão ser analisadas as seguintes métricas para
         avaliar o desempenho do aplicativo:
-        <ul>
-          <br />
-          <li>
-            Growth Rate: Medir a quantidade de usuários ativos do app, ou seja,
-            usuários que acessam o app. Esta métrica nos aponta se o aplicativo
-            está sendo relevante para o usuário, pois um alto crescimento indica
-            que poucas pessoas estão parando de usá-lo, ao passo que novos
-            usuários estão aderindo.
-          </li>
-          <br />
-          <li>
-            Engagement: Acompanhar a liberação de cupons de descontos feitas
-            pelo app, quantificando o engajamento do usuário, de forma a
-            entender se sua interação com o aplicativo está satisfatória.
-          </li>
-        </ul>
       </Paragraph>
+      <ul>
+        <li>
+          Growth Rate: Medir a quantidade de usuários ativos do app, ou seja,
+          usuários que acessam o app. Esta métrica nos aponta se o aplicativo
+          está sendo relevante para o usuário, pois um alto crescimento indica
+          que poucas pessoas estão parando de usá-lo, ao passo que novos
+          usuários estão aderindo.
+        </li>
+        <li>
+          Engagement: Acompanhar a liberação de cupons de descontos feitas pelo
+          app, quantificando o engajamento do usuário, de forma a entender se
+          sua interação com o aplicativo está satisfatória.
+        </li>
+      </ul>
       <SectionTitle>Conclusão e aprendizados</SectionTitle>
       <Paragraph>
         Durante a elaboração deste case nosso maior aprendizado foi sem dúvidas
@@ -368,14 +366,12 @@ const Finnis = () => {
         durante o mapeamento da jornada, e não priorizadas na matriz esforço x
         impacto, como:
       </Paragraph>
-      <Paragraph>
-        <ul>
-          <li>Mapeamento e personalização de hábitos financeiros;</li>
-          <li>Sugestão de produtos e serviços mais em conta;</li>
-          <li>Dicas e fórum de educação financeira;</li>
-          <li>Indicação de investimentos.</li>
-        </ul>
-      </Paragraph>
+      <ul>
+        <li>Mapeamento e personalização de hábitos financeiros;</li>
+        <li>Sugestão de produtos e serviços mais em conta;</li>
+        <li>Dicas e fórum de educação financeira;</li>
+        <li>Indicação de investimentos.</li>
+      </ul>
       <SectionTitle>Obrigado por ler até aqui!</SectionTitle>
       <Paragraph>Equipe:</Paragraph>
       <ul>

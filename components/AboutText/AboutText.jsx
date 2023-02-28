@@ -35,7 +35,7 @@ const AboutText = () => (
       toda, mas a vida me levou sempre a caminhos diferentes. Após formado tive
       pouca experiência em sala de aula e com pesquisa. Fui convidado a
       trabalhar na Tesouraria da Prefeitura Municipal de Maricá, onde ocupei o
-      cargo de Tesoureiro do Município ao longo de 6 anos, tendo a incível
+      cargo de Tesoureiro do Município ao longo de 6 anos, tendo a incrível
       experiencia em liderar essa equipe, sempre procurando aprender, me
       aperfeiçoar e compreender o trabalho dos outros.
     </Paragraph>
