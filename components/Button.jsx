@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { breakAt } from "../constants/breakpoints";
 
 const BaseButton = styled.button`
-  border-radius: 24px;
-  padding: 0.5rem 0;
+  border-radius: 16px;
+  padding: 16px 24px;
   border: none;
   background-color: var(--bg-color);
   color: var(--text-color);

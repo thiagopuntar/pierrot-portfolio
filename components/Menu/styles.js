@@ -80,10 +80,11 @@ const MenuItemBase = styled.li`
 `;
 
 export const MenuItemWrapper = styled(MenuItemBase)`
+  color: var(--primary-2);
   ${breakAt("md")} {
     font-weight: bold;
 
-    ${({ isActive }) => isActive && `color: var(--secondary-5)`};
+    ${({ isActive }) => isActive && `color: var(--secondary-1)`};
 
     span {
       display: inline-block;
