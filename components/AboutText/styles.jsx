@@ -41,7 +41,6 @@ export const H1 = styled.h1`
 `;
 
 export const H2 = styled.h2`
-  font-family: "Playfair Display";
   font-size: 1.5rem;
   line-height: 1.5rem;
   font-weight: 700;

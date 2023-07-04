@@ -28,15 +28,14 @@ export const TopBorder = styled.div`
 `;
 
 export const Title = styled.h3`
-  background: ${(props) => props.theme.colors.white.z2};
-  color: ${(props) => props.theme.colors.primary.z1};
-  font-family: "Playfair display";
+  background: var(--white-2);
+  color: var(--primary-1);
   font-weight: 400;
   font-size: 24px;
   margin-bottom: 24px;
 `;
 
 export const Paragraph = styled.p`
-  background: ${(props) => props.theme.colors.white.z2};
+  background: var(--white-2);
   font-size: 16px;
 `;

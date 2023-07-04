@@ -4,8 +4,8 @@ import imgHero2 from "../../../public/img/img-hero-2.jpg";
 import { linkedinLink, resume } from "../../../constants/links";
 import ResponsiveImage from "../../ResponsiveImage";
 import Link from "next/link";
+import SectionTitle from "../../shared/SectionTitle";
 import {
-  H1,
   ContentWrapper,
   Wrapper,
   ButtonWrapper,
@@ -13,6 +13,7 @@ import {
   Span,
   LinkWrapper,
   ImageWrapper,
+  TextWrapper,
 } from "./styles";
 
 const AboutMe = () => {
@@ -26,16 +27,28 @@ const AboutMe = () => {
         />
       </ImageWrapper>
       <ContentWrapper>
-        <H1>Um pouco sobre mim</H1>
-        <p>
-          Nos ultimos anos decidi mudar de vida, migrei de carreira para UX
-          Design.
-        </p>
-        <br />
-        <p>
-          Tecnologia e inovação sempre foram uma paixão, adoro artes e criar
-          desenhos e imagens. Descobri no UX uma nova paixão.
-        </p>
+        <SectionTitle>Um pouco sobre mim</SectionTitle>
+        <TextWrapper>
+          <p>
+            Sou apaixonado por conhecer e aprender coisas novas, migrei para UX
+            Designer e estou construindo um caminho apaixonante nessa área.
+          </p>
+
+          <p>
+            Tecnologia e inovação sempre foi uma paixão minha, adoro artes,
+            criar desenhos e imagens. Descobrir no UX uma forma de unir isso e
+            tecnologia.
+          </p>
+          <p>
+            Algumas ferramentas e frameworks que utilizo:{" "}
+            <strong>
+              Design Thinking, Teste de Usabilidade, Metodologia agil,
+              Prototipagem, Wireframe, Figma, Bechmarking, Pesquisa com usuário,
+              Arquitetura da informação, Adobe XD, conhecimento em HTML5 & CSS3
+              e Javascript.
+            </strong>
+          </p>
+        </TextWrapper>
         <Link href="/about" passHref>
           <LinkWrapper>
             <Span>Saiba mais sobre mim</Span>
@@ -47,7 +60,7 @@ const AboutMe = () => {
             color="secondary"
             onClick={() => window.open(resume, "_blank")}
           >
-            Baixe o meu currículo
+            Baixar Currículo
           </StyledButton>
           <StyledButton
             variant="outlined"

@@ -57,7 +57,6 @@ export const Title = styled.h4`
   background-color: inherit;
   color: ${(props) => props.theme.colors.black.z1};
   font-size: 1.5rem;
-  font-family: "Playfair Display";
   font-weight: normal;
   text-align: center;
 `;

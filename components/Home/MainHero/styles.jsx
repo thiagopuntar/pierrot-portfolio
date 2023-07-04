@@ -39,13 +39,12 @@ export const H1 = styled.h1`
   margin-bottom: 1em;
 
   & * {
-    font-family: "Playfair Display";
     font-size: 2rem;
     line-height: 1.15;
   }
 
   strong {
-    color: ${(props) => props.theme.colors.secondary.z4};
+    color: var(--secondary-1);
   }
 
   ${breakAt("md")} {
@@ -59,7 +58,7 @@ export const H1 = styled.h1`
 
 export const H2 = styled.h2`
   font-size: 1.5rem;
-`
+`;
 
 export const ImageWrapper = styled.div`
   ${breakAt("md")} {

@@ -2,16 +2,6 @@ import styled from "styled-components";
 import { breakAt } from "../../../constants/breakpoints";
 import Button from "../../Button";
 
-export const H1 = styled.h1`
-  font-family: Poppins;
-  font-size: 1.125rem;
-  margin-bottom: 1em;
-
-  ${breakAt("md")} {
-    font-size: 1.25rem;
-  }
-`;
-
 export const Wrapper = styled.section`
   margin: 9em 0 5em;
   position: relative;
@@ -38,6 +28,16 @@ export const ContentWrapper = styled.div`
   ${breakAt("md")} {
     margin-top: 0;
     width: 50%;
+  }
+`;
+
+export const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  strong {
+    font-weight: 500;
   }
 `;
 

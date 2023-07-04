@@ -28,9 +28,8 @@ export const ContentWrapper = styled.div`
 export const Title = styled.div``;
 
 export const Name = styled.h1`
-  color: ${(props) => props.theme.colors.secondary.z1};
+  color: var(--secondary-1);
   font-size: 1.25rem;
-  font-family: "Playfair Display";
   min-height: 44px;
 
   ${breakAt("md")} {
