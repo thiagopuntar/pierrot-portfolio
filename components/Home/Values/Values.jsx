@@ -1,5 +1,6 @@
 import React from "react";
-import { Wrapper, H2, CardWrapper, StyledCard } from "./styles";
+import { Wrapper, CardWrapper, StyledCard } from "./styles";
+import SectionTitle from "../../shared/SectionTitle/SectionTitle";
 
 const Values = () => {
   const data = [
@@ -31,7 +32,7 @@ const Values = () => {
 
   return (
     <Wrapper>
-      <H2>Valores e Princípios</H2>
+      <SectionTitle>Valores e Princípios</SectionTitle>
       <CardWrapper>
         {data.map(({ title, body }) => (
           <StyledCard title={title} key={title}>

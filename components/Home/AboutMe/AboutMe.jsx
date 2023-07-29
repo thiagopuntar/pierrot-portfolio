@@ -4,8 +4,8 @@ import imgHero2 from "../../../public/img/img-hero-2.jpg";
 import { linkedinLink, resume } from "../../../constants/links";
 import ResponsiveImage from "../../ResponsiveImage";
 import Link from "next/link";
-import SectionTitle from "../../shared/SectionTitle";
 import {
+  Title,
   ContentWrapper,
   Wrapper,
   ButtonWrapper,
@@ -27,7 +27,7 @@ const AboutMe = () => {
         />
       </ImageWrapper>
       <ContentWrapper>
-        <SectionTitle>Um pouco sobre mim</SectionTitle>
+        <Title>Um pouco sobre mim</Title>
         <TextWrapper>
           <p>
             Sou apaixonado por conhecer e aprender coisas novas, migrei para UX

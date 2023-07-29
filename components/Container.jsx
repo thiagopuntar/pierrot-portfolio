@@ -7,6 +7,8 @@ export default styled.div`
   background-color: transparent;
 
   ${breakAt("md")} {
+    display: grid;
+    gap: 114px;
     padding-inline: 0;
     width: 70%;
     max-width: 1008px;

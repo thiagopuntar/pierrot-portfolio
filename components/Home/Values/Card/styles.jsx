@@ -11,7 +11,8 @@ export const Wrapper = styled.div`
   position: relative;
 
   ${breakAt("md")} {
-    padding: 1.5rem 1rem;
+    padding: 24px;
+    padding-top: 16px;
     max-width: 327px;
   }
 `;
@@ -29,9 +30,9 @@ export const TopBorder = styled.div`
 
 export const Title = styled.h3`
   background: var(--white-2);
-  color: var(--primary-1);
-  font-weight: 400;
-  font-size: 24px;
+  color: var(--primary-3);
+  font-weight: 600;
+  font-size: 1.25rem;
   margin-bottom: 24px;
 `;
 

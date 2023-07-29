@@ -1,16 +1,11 @@
 import styled from "styled-components";
 
-import { breakAt } from "../../../constants/breakpoints";
-
 const SectionTitle = styled.h2`
-  font-family: Poppins;
-  font-size: 1.125rem;
-  margin-bottom: 1em;
+  font-size: 2rem;
   font-weight: 600;
-
-  ${breakAt("md")} {
-    font-size: 1.25rem;
-  }
+  text-align: center;
+  color: var(--primary-2);
+  margin-bottom: 4rem;
 `;
 
 export default SectionTitle;

@@ -3,15 +3,23 @@ import { breakAt } from "../../../constants/breakpoints";
 import Button from "../../Button";
 
 export const Wrapper = styled.section`
-  margin: 9em 0 5em;
   position: relative;
   background-color: transparent;
 
   ${breakAt("md")} {
-    margin: 10em 0;
     display: flex;
     align-items: flex-start;
     gap: 5%;
+  }
+`;
+
+export const Title = styled.h2`
+  font-size: 1.125rem;
+  margin-bottom: 1em;
+  font-weight: 600;
+
+  ${breakAt("md")} {
+    font-size: 1.25rem;
   }
 `;
 

@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.section`
-  margin-top: 10em;
-`;
+export const Wrapper = styled.section``;
 
 export const H2 = styled.h2`
   font-size: 1.5rem;
