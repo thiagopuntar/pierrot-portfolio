@@ -1,19 +1,29 @@
 import React from "react";
 import JobCard from "./JobCard";
+import SectionTitle from "../../shared/SectionTitle";
 import jobFinish from "../../../public/img/job-finish.png";
 import jobCollection from "../../../public/img/job-collection.png";
-import jobCrypto from "../../../public/img/job-crypto.png";
-import { H2, JobsWrapper, Wrapper } from "./styles";
+import jobPortifolio from "../../../public/img/job-portifolio.png";
+import { JobsWrapper, Wrapper } from "./styles";
 
 const Jobs = () => {
   return (
     <Wrapper>
-      <H2 id="works">Trabalhos</H2>
+      <SectionTitle id="works">Trabalhos</SectionTitle>
       <JobsWrapper>
+        <JobCard
+          imageSrc={jobPortifolio}
+          imageAlt="Portifolio"
+          title="Desenvolvimento do Portifólio"
+          href="/jobs/portifolio"
+        >
+          Como construí o meu portifólio, como base no meu processo de design,
+          aplicando metodologias e ferramentas de UX/UI para criar uma boa
+          experiência aos usuários.
+        </JobCard>
         <JobCard
           imageSrc={jobCollection}
           imageAlt="Coletânea"
-          header="Processo de Trabalho"
           title="Coletânea de trabalhos"
           href="/jobs/collection"
         >
@@ -23,23 +33,12 @@ const Jobs = () => {
         <JobCard
           imageSrc={jobFinish}
           imageAlt="Finnis"
-          header="Aplicativo Financeiro"
           title="Neon Finni$"
           href="/jobs/finni$"
           align="right"
         >
           Como os correntistas do Banco Neon controlam suas finanças e ao mesmo
           tempo economizam para ter uma melhor qualidade de vida.
-        </JobCard>
-        <JobCard
-          imageSrc={jobCrypto}
-          imageAlt="Krypton"
-          header="Aplicativo de NFT"
-          title="Cyber Crypto"
-          href="/jobs/cyberCrypto"
-        >
-          Desenvolvimento de design para um aplicativo de NFT, com elementos de
-          carteira e compra de NFT
         </JobCard>
       </JobsWrapper>
     </Wrapper>

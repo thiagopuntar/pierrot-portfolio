@@ -2,32 +2,26 @@ import Link from "next/link";
 import React from "react";
 import {
   ContentWrapper,
-  Header,
   ImageWrapper,
   Text,
   Title,
   Wrapper,
   StyledButton,
-  StyledImage,
 } from "./styles";
+import ResponsiveImage from "../../../ResponsiveImage";
 
-const JobCard = ({
-  imageSrc,
-  imageAlt,
-  header,
-  title,
-  href,
-  children,
-  align,
-  className,
-}) => {
+const JobCard = ({ imageSrc, imageAlt, title, href, children, className }) => {
   return (
-    <Wrapper className={className} align={align}>
-      <ImageWrapper align={align}>
-        <StyledImage src={imageSrc} alt={imageAlt} />
+    <Wrapper className={className}>
+      <ImageWrapper>
+        <ResponsiveImage
+          src={imageSrc}
+          alt={imageAlt}
+          layout="fill"
+          objectFit="cover"
+        />
       </ImageWrapper>
-      <ContentWrapper align={align}>
-        <Header>{header}</Header>
+      <ContentWrapper>
         <Title>{title}</Title>
         <Text>{children}</Text>
         <Link href={href} passHref>
