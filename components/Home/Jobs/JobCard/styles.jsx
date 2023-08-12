@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import ResponsiveImage from "../../../ResponsiveImage";
 import Button from "../../../Button";
 import { breakAt } from "../../../../constants/breakpoints";
 
@@ -7,9 +6,9 @@ export const Wrapper = styled.div`
   background-color: var(--white-2);
   border-radius: 24px;
   box-shadow: 0px 4px 10px rgba(83, 38, 128, 0.5);
+  margin-bottom: 25%;
 
   ${breakAt("md")} {
-    margin-bottom: 25%;
     max-width: 640px;
   }
 `;
@@ -17,16 +16,22 @@ export const Wrapper = styled.div`
 export const ImageWrapper = styled.div`
   margin-top: -25%;
   width: 85%;
-  min-height: 520px;
   margin-inline: auto;
   position: relative;
   border-radius: 24px;
+  min-height: 300px;
+
+  ${breakAt("md")} {
+    max-width: 640px;
+    min-height: 520px;
+  }
 `;
 
 export const ContentWrapper = styled.div`
   padding-top: 1rem;
   margin: 0 auto;
   border-radius: 24px;
+  padding: 16px 24px;
 
   ${breakAt("md")} {
     padding: 24px 60px;
