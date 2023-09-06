@@ -42,7 +42,7 @@ const Footer = () => {
           <RightColumn>
             <Button
               variant="outlined"
-              color="secondary"
+              color="white"
               onClick={() => window.open(resume, "_blank")}
             >
               Baixe o currículo

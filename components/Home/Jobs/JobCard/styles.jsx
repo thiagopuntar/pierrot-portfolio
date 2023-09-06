@@ -3,18 +3,13 @@ import Button from "../../../Button";
 import { breakAt } from "../../../../constants/breakpoints";
 
 export const Wrapper = styled.div`
-  background-color: var(--white-2);
-  border-radius: 24px;
-  box-shadow: 0px 4px 10px rgba(83, 38, 128, 0.5);
-  margin-bottom: 25%;
-
   ${breakAt("md")} {
     max-width: 640px;
+    margin-top: -300px;
   }
 `;
 
 export const ImageWrapper = styled.div`
-  margin-top: -25%;
   width: 85%;
   margin-inline: auto;
   position: relative;
@@ -24,17 +19,24 @@ export const ImageWrapper = styled.div`
   ${breakAt("md")} {
     max-width: 640px;
     min-height: 520px;
+    top: 300px;
   }
 `;
 
 export const ContentWrapper = styled.div`
   padding-top: 1rem;
-  margin: 0 auto;
+  background-color: var(--white-2);
   border-radius: 24px;
+  box-shadow: 0px 4px 10px rgba(83, 38, 128, 0.5);
+  margin: 0 auto;
   padding: 16px 24px;
 
   ${breakAt("md")} {
     padding: 24px 60px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
   }
 `;
 

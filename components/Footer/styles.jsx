@@ -5,8 +5,8 @@ export const Wrapper = styled.footer`
   position: relative;
   padding: 1.5em 1em;
   margin-top: 7em;
-  background: ${(props) => props.theme.colors.primary.z5};
-  color: ${({ theme }) => theme.colors.white.z2};
+  background-color: var(--primary-1);
+  color: var(--white-2);
 
   ${breakAt("md")} {
     padding-inline: 0;
@@ -19,8 +19,6 @@ export const Wrapper = styled.footer`
 `;
 
 export const ContentWrapper = styled.div`
-  max-width: 1440px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 `;
@@ -30,11 +28,12 @@ export const Title = styled.div``;
 export const Name = styled.h1`
   color: var(--secondary-1);
   font-size: 1.25rem;
-  min-height: 44px;
+  width: min-content;
+  font-weight: 400;
 
   ${breakAt("md")} {
     font-size: 2rem;
-    font-weight: bold;
+    width: max-content;
   }
 `;
 

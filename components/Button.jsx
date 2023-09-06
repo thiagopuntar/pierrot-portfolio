@@ -40,6 +40,10 @@ const colors = {
     "--text-color": "var(--secondary-1)",
     "--bg-color": "var(--primary-1)",
   },
+  white: {
+    "--text-color": "var(--white-2)",
+    "--bg-color": "var(--white-2)",
+  },
 };
 
 const variants = {

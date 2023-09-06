@@ -1,9 +1,16 @@
 import styled from "styled-components";
+import { breakAt } from "../../../constants/breakpoints";
 
 export const CompaniesWrapper = styled.ul`
+  list-style: none;
   display: flex;
-  gap: 64px;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  list-style: none;
+  flex-direction: column;
+  gap: 24px;
+  ${breakAt("md")} {
+    flex-direction: row;
+    gap: 64px;
+  }
 `;

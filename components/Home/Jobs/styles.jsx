@@ -6,6 +6,5 @@ export const JobsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30%;
-  gap: 24px;
+  gap: 64px;
 `;
